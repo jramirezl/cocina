@@ -5,6 +5,8 @@
  */
 package receta;
 
+import java.util.Arrays;
+
 /**
  *
  * @author jpramire
@@ -14,6 +16,7 @@ public class Receta {
     private String intrucciones;   
     private String autor;
     private Ingrediente [] ingrediente = new Ingrediente[5];
+    private int indiceIngredientes = 0;
 
    
        
@@ -50,7 +53,10 @@ public class Receta {
 
     @Override
     public String toString() {
-        return "Receta: " + nombre;
+        return "\nReceta: " + this.getNombre() +
+                           "\nAutor: " + this.getAutor() +
+                            "\n Ingredientes: " + Arrays.toString(this.getIngrediente()) +
+                           "\n Intrucciones: " + this.getInstrucciones();
     }
     
     
@@ -60,54 +66,55 @@ public class Receta {
     
  
     public void setReceta(){       
-        this.ingrediente [0] = new Ingrediente();
-        this.ingrediente [1] = new Ingrediente();
-        this.ingrediente [2] = new Ingrediente();
-        this.ingrediente [3] = new Ingrediente();
-        this.ingrediente [4] = new Ingrediente();
+        this.getIngrediente() [0] = new Ingrediente();
+        this.getIngrediente() [1] = new Ingrediente();
+        this.getIngrediente() [2] = new Ingrediente();
+        this.getIngrediente() [3] = new Ingrediente();
+        this.getIngrediente() [4] = new Ingrediente();
         
     }
     
     
-    public void setRecetaIngredientes(String rnombre1, int rcantidad1,
-                                      String rnombre2, int rcantidad2,
-                                      String rnombre3, int rcantidad3,
-                                      String rnombre4, int rcantidad4,
-                                      String rnombre5, int rcantidad5)
+    public void agregarIngrediente(Ingrediente ingrediente)
     {      
-        ingrediente[0].setNombre(rnombre1);
-        ingrediente[0].setCantidad(rcantidad1);  
-        ingrediente[1].setNombre(rnombre2);
-        ingrediente[1].setCantidad(rcantidad2); 
-        ingrediente[2].setNombre(rnombre3);
-        ingrediente[2].setCantidad(rcantidad3); 
-        ingrediente[3].setNombre(rnombre4);
-        ingrediente[3].setCantidad(rcantidad4); 
-        ingrediente[4].setNombre(rnombre5);
-        ingrediente[4].setCantidad(rcantidad5); 
-        
+        this.getIngrediente()[this.indiceIngredientes] = ingrediente;
+        indiceIngredientes++;
         
     }
     
     public String getRecetaIngredientes(){
         return 
         "\n"+
-        ingrediente[0].getNombre() + " "+
-        ingrediente[0].getCantidad() + "\n"+
-        ingrediente[1].getNombre() + " "+
-        ingrediente[1].getCantidad() + "\n"+
-        ingrediente[2].getNombre() + " "+
-        ingrediente[2].getCantidad() + "\n"+
-        ingrediente[3].getNombre() + " "+
-        ingrediente[3].getCantidad() + "\n"+
-        ingrediente[4].getNombre() + " "+
-        ingrediente[4].getCantidad();   
+        getIngrediente()[0].getNombre() + " "+
+        getIngrediente()[0].getCantidad() + "\n"+
+        getIngrediente()[1].getNombre() + " "+
+        getIngrediente()[1].getCantidad() + "\n"+
+        getIngrediente()[2].getNombre() + " "+
+        getIngrediente()[2].getCantidad() + "\n"+
+        getIngrediente()[3].getNombre() + " "+
+        getIngrediente()[3].getCantidad() + "\n"+
+        getIngrediente()[4].getNombre() + " "+
+        getIngrediente()[4].getCantidad();   
     }
   
     //no es constructor
    /*public int Receta(){
        return 0;
    }*/
+
+    /**
+     * @return the ingrediente
+     */
+    public Ingrediente[] getIngrediente() {
+        return ingrediente;
+    }
+
+    /**
+     * @param ingrediente the ingrediente to set
+     */
+    public void setIngrediente(Ingrediente[] ingrediente) {
+        this.ingrediente = ingrediente;
+    }
     
    
 }
