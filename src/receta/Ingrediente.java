@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sample;
+package receta;
 
 /**
  *
@@ -29,11 +29,9 @@ public class Ingrediente {
     public int getCantidad(){
         return this.cantidad;
     }
-
+    
     @Override
     public String toString() {
         return "Ingrediente: " + getNombre() + " cantidad: " + getCantidad();
     }
-    
-    
 }
