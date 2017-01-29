@@ -22,6 +22,7 @@ public class Main {
 
     public static void main(String[] args) {
        Receta empanadaObj = new Receta(); // nombre de la instancia empanadaObj
+       Receta ajiaco = new Receta();
 
 
        //instaciacion. creando un objeto. pone el objeto en memoria
@@ -31,11 +32,9 @@ public class Main {
 
        empanadaObj.setAutor("Flor");
        empanadaObj.setInstrucciones("Divida la masa en triangulos y coloque los ingredientes y cierre la masa y frite");
-       empanadaObj.setNombre("Empanada");
-       
+       empanadaObj.setNombre("Empanada");       
        empanadaObj.setReceta();
-       
-       
+              
        Ingrediente i1 = new Ingrediente();
        Ingrediente i2 = new Ingrediente();
        Ingrediente i3 = new Ingrediente();
@@ -62,12 +61,32 @@ public class Main {
         System.out.println(empanadaObj);
 
        /////////////////////////////////AJIACO//////////////////////////////////////////////////////////
-       
-       Receta ajiaco = new Receta();
+                  
        ajiaco.setAutor("Clotilde");
        ajiaco.setInstrucciones("ponga los ingredientes en una olla y calientelos a fuego lento");
        ajiaco.setNombre("Ajiaco");
        ajiaco.setReceta();
+       
+       Ingrediente i6 = new Ingrediente();
+       Ingrediente i7 = new Ingrediente();
+       Ingrediente i8 = new Ingrediente();
+       Ingrediente i9 = new Ingrediente();
+       
+       i6.setNombre("pollo");
+       i6.setCantidad(2);
+       i7.setNombre("mazorca");
+       i7.setCantidad(3);
+       i8.setNombre("platano");
+       i8.setCantidad(10);
+       i9.setNombre("agua");
+       i9.setCantidad(1);
+       
+       ajiaco.agregarIngrediente(i1);
+       ajiaco.agregarIngrediente(i6);
+       ajiaco.agregarIngrediente(i7);
+       ajiaco.agregarIngrediente(i8);
+       ajiaco.agregarIngrediente(i9);
+       
        //ajiaco.setRecetaIngredientes("agua", 1, "pollo", 2, "papa", 5, "mazorca", 3, "platano", 10);
         System.out.println(ajiaco);
             
