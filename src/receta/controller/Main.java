@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package receta.controller;
+
+import receta.Ingrediente;
 import receta.Receta;
 
 /**
@@ -20,6 +22,7 @@ public class Main {
 
     public static void main(String[] args) {
        Receta empanadaObj = new Receta(); // nombre de la instancia empanadaObj
+       Receta ajiaco = new Receta();
 
 
        //instaciacion. creando un objeto. pone el objeto en memoria
@@ -29,34 +32,63 @@ public class Main {
 
        empanadaObj.setAutor("Flor");
        empanadaObj.setInstrucciones("Divida la masa en triangulos y coloque los ingredientes y cierre la masa y frite");
-       empanadaObj.setNombre("Empanada");
-       
+       empanadaObj.setNombre("Empanada");       
        empanadaObj.setReceta();
-       empanadaObj.setRecetaIngredientes("papa", 2, "masa", 3, "carne", 2, "pollo", 2, "aceite", 10);
-
+              
+       Ingrediente i1 = new Ingrediente();
+       Ingrediente i2 = new Ingrediente();
+       Ingrediente i3 = new Ingrediente();
+       Ingrediente i4 = new Ingrediente();
+       Ingrediente i5 = new Ingrediente();
        
+       i1.setNombre("papa");
+       i1.setCantidad(2);
+       i2.setNombre("carne");
+       i2.setCantidad(5);
+       i3.setNombre("masa");
+       i3.setCantidad(5);
+       i4.setNombre("aji");
+       i4.setCantidad(5);
+       i5.setNombre("aceite");
+       i5.setCantidad(1);
+       
+       empanadaObj.agregarIngrediente(i1);
+       empanadaObj.agregarIngrediente(i2);
+       empanadaObj.agregarIngrediente(i3);
+       empanadaObj.agregarIngrediente(i4);
+       empanadaObj.agregarIngrediente(i5);
 
-        System.out.println("\nReceta: " + empanadaObj.getNombre() +
-                           "\nAutor: " + empanadaObj.getAutor() +
-                            "\n Ingredientes: " + empanadaObj.getRecetaIngredientes()+
-                           "\n Intrucciones: " + empanadaObj.getInstrucciones());
+        System.out.println(empanadaObj);
 
        /////////////////////////////////AJIACO//////////////////////////////////////////////////////////
+                  
+       ajiaco.setAutor("Clotilde");
+       ajiaco.setInstrucciones("ponga los ingredientes en una olla y calientelos a fuego lento");
+       ajiaco.setNombre("Ajiaco");
+       ajiaco.setReceta();
        
-       Receta Ajiaco = new Receta();
-       Ajiaco.setAutor("Clotilde");
-       Ajiaco.setInstrucciones("ponga los ingredientes en una olla y calientelos a fuego lento");
-       Ajiaco.setNombre("Ajiaco");
+       Ingrediente i6 = new Ingrediente();
+       Ingrediente i7 = new Ingrediente();
+       Ingrediente i8 = new Ingrediente();
+       Ingrediente i9 = new Ingrediente();
        
-       Ajiaco.setReceta();
-       Ajiaco.setRecetaIngredientes("agua", 1, "pollo", 2, "papa", 5, "mazorca", 3, "platano", 10);
-
+       i6.setNombre("pollo");
+       i6.setCantidad(2);
+       i7.setNombre("mazorca");
+       i7.setCantidad(3);
+       i8.setNombre("platano");
+       i8.setCantidad(10);
+       i9.setNombre("agua");
+       i9.setCantidad(1);
        
-
-        System.out.println("\nReceta: " + Ajiaco.getNombre() +
-                           "\nAutor: " + Ajiaco.getAutor() +
-                            "\n Ingredientes: " + Ajiaco.getRecetaIngredientes()+
-                           "\n Intrucciones: " + Ajiaco.getInstrucciones());
+       ajiaco.agregarIngrediente(i1);
+       ajiaco.agregarIngrediente(i6);
+       ajiaco.agregarIngrediente(i7);
+       ajiaco.agregarIngrediente(i8);
+       ajiaco.agregarIngrediente(i9);
+       
+       //ajiaco.setRecetaIngredientes("agua", 1, "pollo", 2, "papa", 5, "mazorca", 3, "platano", 10);
+        System.out.println(ajiaco);
             
     }
   

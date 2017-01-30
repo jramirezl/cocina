@@ -10,8 +10,10 @@ package receta;
  * @author jpramire
  */
 public class Ingrediente {
+
     private String nombre;
     private int cantidad;
+    private String tipo;
     
     //escritura
     public void setNombre(String nombre){
@@ -32,6 +34,23 @@ public class Ingrediente {
     
     @Override
     public String toString() {
-        return "Ingrediente: " + getNombre() + " cantidad: " + getCantidad();
+        return "Ingrediente: " + getNombre()
+                + " cantidad: " + getCantidad();
+                //+ " tipo: " + getTipo();
+    }
+    
+    
+    /**
+     * @return the tipo
+     */
+    public String getTipo() {
+        return tipo;
+    }
+
+    /**
+     * @param tipo the tipo to set
+     */
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }
