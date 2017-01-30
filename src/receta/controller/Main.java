@@ -33,15 +33,15 @@ public class Main {
        empanadaObj.setAutor("Flor");
        empanadaObj.setInstrucciones("Divida la masa en triangulos y coloque los ingredientes y cierre la masa y frite");
        empanadaObj.setNombre("Empanada");       
-       empanadaObj.setReceta();
+       //empanadaObj.setReceta();
               
-       Ingrediente i1 = new Ingrediente();
-       Ingrediente i2 = new Ingrediente();
-       Ingrediente i3 = new Ingrediente();
-       Ingrediente i4 = new Ingrediente();
-       Ingrediente i5 = new Ingrediente();
+       Ingrediente i1 = new Ingrediente("papa", 2, "vegetal");
+       Ingrediente i2 = new Ingrediente("carne", 5, "carne");
+       Ingrediente i3 = new Ingrediente("masa", 1, "harina");
+       Ingrediente i4 = new Ingrediente("aji", 3, "salsa");
+       Ingrediente i5 = new Ingrediente("aceite", 3, "liquido");
        
-       i1.setNombre("papa");
+       /*i1.setNombre("papa");
        i1.setCantidad(2);
        i2.setNombre("carne");
        i2.setCantidad(5);
@@ -50,7 +50,7 @@ public class Main {
        i4.setNombre("aji");
        i4.setCantidad(5);
        i5.setNombre("aceite");
-       i5.setCantidad(1);
+       i5.setCantidad(1);*/
        
        empanadaObj.agregarIngrediente(i1);
        empanadaObj.agregarIngrediente(i2);
@@ -65,21 +65,21 @@ public class Main {
        ajiaco.setAutor("Clotilde");
        ajiaco.setInstrucciones("ponga los ingredientes en una olla y calientelos a fuego lento");
        ajiaco.setNombre("Ajiaco");
-       ajiaco.setReceta();
+       //ajiaco.setReceta();
        
-       Ingrediente i6 = new Ingrediente();
-       Ingrediente i7 = new Ingrediente();
-       Ingrediente i8 = new Ingrediente();
-       Ingrediente i9 = new Ingrediente();
+       Ingrediente i6 = new Ingrediente("pollo", 2, "carne");
+       Ingrediente i7 = new Ingrediente("marzorca", 5, "vegetal");
+       Ingrediente i8 = new Ingrediente("platano", 3, "vegetal");
+       Ingrediente i9 = new Ingrediente("agua", 2, "liquido");
        
-       i6.setNombre("pollo");
+       /*i6.setNombre("pollo");
        i6.setCantidad(2);
        i7.setNombre("mazorca");
        i7.setCantidad(3);
        i8.setNombre("platano");
        i8.setCantidad(10);
        i9.setNombre("agua");
-       i9.setCantidad(1);
+       i9.setCantidad(1);*/
        
        ajiaco.agregarIngrediente(i1);
        ajiaco.agregarIngrediente(i6);
