@@ -15,6 +15,13 @@ public class Ingrediente {
     private int cantidad;
     private String tipo;
     
+    public Ingrediente (String nombreIng, int cantIng, String tipoIng)
+    {
+        this.nombre = nombreIng;
+        this.cantidad = cantIng;
+        this.tipo = tipoIng;
+    }            
+    
     //escritura
     public void setNombre(String nombre){
         this.nombre = nombre;
@@ -35,8 +42,8 @@ public class Ingrediente {
     @Override
     public String toString() {
         return "Ingrediente: " + getNombre()
-                + " cantidad: " + getCantidad();
-                //+ " tipo: " + getTipo();
+                + " cantidad: " + getCantidad()
+                + " tipo: " + getTipo();
     }
     
     

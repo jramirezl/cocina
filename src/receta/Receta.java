@@ -17,7 +17,6 @@ public class Receta {
     private String autor;
     private Ingrediente [] ingrediente = new Ingrediente[5];
     private int indiceIngredientes = 0;
-
    
        
     public void setNombre(String nombre)
@@ -65,15 +64,16 @@ public class Receta {
     //inicializar atributos o propiedades
     
  
-    public void setReceta(){       
+    /*public void setReceta(){
+        
         this.getIngrediente() [0] = new Ingrediente();
         this.getIngrediente() [1] = new Ingrediente();
         this.getIngrediente() [2] = new Ingrediente();
         this.getIngrediente() [3] = new Ingrediente();
         this.getIngrediente() [4] = new Ingrediente();
         
-    }
-    
+    }*/
+   
     
     public void agregarIngrediente(Ingrediente ingrediente)
     {      
@@ -82,6 +82,7 @@ public class Receta {
         
     }
     
+    /*
     public String getRecetaIngredientes(){
         return 
         "\n"+
@@ -95,7 +96,7 @@ public class Receta {
         getIngrediente()[3].getCantidad() + "\n"+
         getIngrediente()[4].getNombre() + " "+
         getIngrediente()[4].getCantidad();   
-    }
+    }*/
   
     //no es constructor
    /*public int Receta(){
