@@ -9,17 +9,21 @@ package receta;
  *
  * @author jpramire
  */
-public class Ingrediente {
+
+public abstract class Ingrediente {
 
     private String nombre;
     private int cantidad;
     private String tipo;
+    private String tamano;
     
-    public Ingrediente (String nombreIng, int cantIng, String tipoIng)
+    //Constructor que recibe parametros
+    public Ingrediente (String nombreIng, int cantIng, String tipoIng, String tamanoIng)
     {
         this.nombre = nombreIng;
         this.cantidad = cantIng;
         this.tipo = tipoIng;
+        this.tamano = tamanoIng;
     }            
     
     //escritura
@@ -27,37 +31,93 @@ public class Ingrediente {
         this.nombre = nombre;
     }
     
-    public void setCantidad(int cantidad){
-        this.cantidad = cantidad;
-    }
     //lectura
     public String getNombre(){
        return this.nombre;
     }
     
+    public void setCantidad(int cantidad){
+        this.cantidad = cantidad;
+    }
+    
     public int getCantidad(){
         return this.cantidad;
     }
-    
-    @Override
-    public String toString() {
-        return "Ingrediente: " + getNombre()
-                + " cantidad: " + getCantidad()
-                + " tipo: " + getTipo();
-    }
-    
-    
-    /**
-     * @return the tipo
-     */
+
     public String getTipo() {
         return tipo;
     }
 
-    /**
-     * @param tipo the tipo to set
-     */
-    public void setTipo(String tipo) {
+    public void setTipo(String tipo) {        
         this.tipo = tipo;
+    }
+        
+
+    public String getTamano() {
+        return tamano;
+    }
+
+    public void setTamano(String tamano) {
+        this.tamano = tamano;
+    }
+    
+        @Override
+    public String toString() {
+        return "Ingrediente: " + getNombre()
+                + " cantidad: " + getCantidad()
+                + " tipo: " + getTipo()
+                + "tamano" + getTamano();
+    }
+    
+    abstract public void Tamano();
+}
+
+class Liquidos extends Ingrediente{
+
+    public Liquidos(String nombreIng, int cantIng, String tipoIng, String tamanoIng) {
+        super(nombreIng, cantIng, tipoIng, tamanoIng);
+    }
+    public void Tamano(){
+        
+    }
+}
+
+class Granos extends Ingrediente{
+
+    public Granos(String nombreIng, int cantIng, String tipoIng, String tamanoIng) {
+        super(nombreIng, cantIng, tipoIng, tamanoIng);
+    }
+    public void Tamano(){
+        
+    }
+}
+
+class Carnes extends Ingrediente{
+
+    public Carnes(String nombreIng, int cantIng, String tipoIng, String tamanoIng) {
+        super(nombreIng, cantIng, tipoIng, tamanoIng);
+    }
+    public void Tamano(){
+        
+    }
+}
+
+class Verduras extends Ingrediente{
+
+    public Verduras (String nombreIng, int cantIng, String tipoIng, String tamanoIng) {
+        super(nombreIng, cantIng, tipoIng, tamanoIng);
+    }
+    public void Tamano(){
+        
+    }
+}
+
+class Frutas extends Ingrediente{
+
+    public Frutas(String nombreIng, int cantIng, String tipoIng, String tamanoIng) {
+        super(nombreIng, cantIng, tipoIng, tamanoIng);
+    }
+    public void Tamano(){
+        
     }
 }

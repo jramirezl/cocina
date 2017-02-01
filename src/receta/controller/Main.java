@@ -20,7 +20,7 @@ public class Main {
    
   
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
        Receta empanadaObj = new Receta(); // nombre de la instancia empanadaObj
        Receta ajiaco = new Receta();
 
@@ -35,22 +35,13 @@ public class Main {
        empanadaObj.setNombre("Empanada");       
        //empanadaObj.setReceta();
               
-       Ingrediente i1 = new Ingrediente("papa", 2, "vegetal");
-       Ingrediente i2 = new Ingrediente("carne", 5, "carne");
-       Ingrediente i3 = new Ingrediente("masa", 1, "harina");
-       Ingrediente i4 = new Ingrediente("aji", 3, "salsa");
-       Ingrediente i5 = new Ingrediente("aceite", 3, "liquido");
+       Ingrediente i1 = new Ingrediente("papa", 2, "vegetal", "libras");
+       Ingrediente i2 = new Ingrediente("carne", 5, "carne", "kilogramos");
+       Ingrediente i3 = new Ingrediente("masa", 1, "harina", "libras");
+       Ingrediente i4 = new Ingrediente("aji", 3, "salsa", "onzas");
+       Ingrediente i5 = new Ingrediente("aceite", 3, "liquido", "onzas");
        
-       /*i1.setNombre("papa");
-       i1.setCantidad(2);
-       i2.setNombre("carne");
-       i2.setCantidad(5);
-       i3.setNombre("masa");
-       i3.setCantidad(5);
-       i4.setNombre("aji");
-       i4.setCantidad(5);
-       i5.setNombre("aceite");
-       i5.setCantidad(1);*/
+
        
        empanadaObj.agregarIngrediente(i1);
        empanadaObj.agregarIngrediente(i2);
@@ -72,14 +63,6 @@ public class Main {
        Ingrediente i8 = new Ingrediente("platano", 3, "vegetal");
        Ingrediente i9 = new Ingrediente("agua", 2, "liquido");
        
-       /*i6.setNombre("pollo");
-       i6.setCantidad(2);
-       i7.setNombre("mazorca");
-       i7.setCantidad(3);
-       i8.setNombre("platano");
-       i8.setCantidad(10);
-       i9.setNombre("agua");
-       i9.setCantidad(1);*/
        
        ajiaco.agregarIngrediente(i1);
        ajiaco.agregarIngrediente(i6);
@@ -90,6 +73,6 @@ public class Main {
        //ajiaco.setRecetaIngredientes("agua", 1, "pollo", 2, "papa", 5, "mazorca", 3, "platano", 10);
         System.out.println(ajiaco);
             
-    }
+    }*/
   
 }
