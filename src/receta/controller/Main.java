@@ -68,6 +68,7 @@ public class Main {
     
     Carne iUniversidad1 = new Carne("Cerdo");
     iUniversidad1.setParte("Costilla");
+    iUniversidad1.setPeso(1500);
     iUniversidad1.setMedida("Libras");
     
     Liquido iUniversidad2 = new Liquido("Agua");
