@@ -24,38 +24,39 @@ public class Main {
     hospital.setUbicacionCocina("Cincinnati,OH");
     hospital.setAliasCocina("Primer piso"); 
     
-    Carne ihospital1 = new Carne("Pollo");
-    ihospital1.setParte("pechuga");
-    ihospital1.setCantidad(106);
+    Carne iHospital1 = new Carne("Pollo");
+    iHospital1.setParte("pechuga");
+    iHospital1.setCantidad(106);
     
-    Condimento ihospital2 = new Condimento("Aji");
-    ihospital2.setCantidad(200);
-    ihospital2.setMedida("onzas");
+    Condimento iHospital2 = new Condimento("Aji");
+    iHospital2.setCantidad(200);
+    iHospital2.setMedida("onzas");
     
-    FrutayVerdura ihospital3 = new FrutayVerdura("papa");
-    ihospital3.setCantidad(1);
-    ihospital3.setMedida("libraS");
+    FrutayVerdura iHospital3 = new FrutayVerdura("papa");
+    iHospital3.setCantidad(1);
+    iHospital3.setMedida("libraS");
     
-    Liquido ihospital4 = new Liquido("Aceite");
-    ihospital4.setCantidad(100);
-    ihospital4.setMedida("galones");
+    Liquido iHospital4 = new Liquido("Aceite");
+    iHospital4.setCantidad(100);
+    iHospital4.setMedida("galones");
     
-    Grano ihospital5 = new Grano("Maiz");
-    ihospital5.setCantidad(10);
-    ihospital5.setMedida("libras");
+    Grano iHospital5 = new Grano("Maiz");
+    iHospital5.setCantidad(10);
+    iHospital5.setMedida("libras");
     
     hospital.agregarIngCocina(ihospital1);
     hospital.agregarIngCocina(ihospital2);
-    hospital.agregarIngCocina(ihospital3);
-    hospital.agregarIngCocina(ihospital4);
-    hospital.agregarIngCocina(ihospital5);
+    hospital.agregarIngCocina(iHospital3);
+    hospital.agregarIngCocina(iHospital4);
+    hospital.agregarIngCocina(iHospital5);
     
      /*********************Recetas*********************/
-    /* Receta empanada = new Receta(5);
+     Receta empanada = new Receta(5);
      empanada.setNombre("Empanada");
      empanada.setAutor("Clotilde");
      empanada.setInstrucciones("Divida la masa en triangulos y coloque los ingredientes y cierre la masa y frite");
-     Ingrediente i1 = new Ingrediente("papa", 2, "vegetal");*/
+     
+     Ingrediente i1 = new Ingrediente("papa", 2, "vegetal");
      
     
  /******************************************UNIVERSIDAD***********************************************/
