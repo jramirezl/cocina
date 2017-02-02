@@ -51,12 +51,12 @@ public class Main {
     hospital.agregarIngCocina(iHospital5);
     
      /*********************Recetas*********************/
-     /*Receta empanada = new Receta(5);
+     Receta empanada = new Receta(5);
      empanada.setNombre("Empanada");
      empanada.setAutor("Clotilde");
      empanada.setInstrucciones("Divida la masa en triangulos y coloque los ingredientes y cierre la masa y frite");
      
-     Ingrediente i1 = new Ingrediente("papa", 2, "vegetal");*/
+     Ingrediente i1 = new Ingrediente("papa", 2, "vegetal");
      
     
  /******************************************UNIVERSIDAD***********************************************/
