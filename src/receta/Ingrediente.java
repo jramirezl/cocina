@@ -9,55 +9,57 @@ package receta;
  *
  * @author jpramire
  */
-public class Ingrediente {
+
+public abstract class Ingrediente {
 
     private String nombre;
     private int cantidad;
-    private String tipo;
+    private String medida;//Litro, kilo, cup, onzas, 
     
-    public Ingrediente (String nombreIng, int cantIng, String tipoIng)
-    {
-        this.nombre = nombreIng;
-        this.cantidad = cantIng;
-        this.tipo = tipoIng;
-    }            
-    
-    //escritura
-    public void setNombre(String nombre){
-        this.nombre = nombre;
-    }
-    
-    public void setCantidad(int cantidad){
-        this.cantidad = cantidad;
-    }
-    //lectura
-    public String getNombre(){
-       return this.nombre;
-    }
-    
-    public int getCantidad(){
-        return this.cantidad;
-    }
-    
-    @Override
-    public String toString() {
-        return "Ingrediente: " + getNombre()
-                + " cantidad: " + getCantidad()
-                + " tipo: " + getTipo();
-    }
-    
-    
+    //Constructor que recibe parametros
+
     /**
-     * @return the tipo
+     * @return the nombre
      */
-    public String getTipo() {
-        return tipo;
+    public String getNombre() {
+        return nombre;
     }
 
     /**
-     * @param tipo the tipo to set
+     * @param nombre the nombre to set
      */
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
+
+    /**
+     * @return the cantidad
+     */
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    /**
+     * @param cantidad the cantidad to set
+     */
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    /**
+     * @return the medida
+     */
+    public String getMedida() {
+        return medida;
+    }
+
+    /**
+     * @param medida the medida to set
+     */
+    public void setMedida(String medida) {
+        this.medida = medida;
+    }
+   
 }
+
+
