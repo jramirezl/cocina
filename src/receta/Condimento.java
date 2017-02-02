@@ -10,8 +10,10 @@ package receta;
  * @author Evelyn-da
  */
 public class Condimento extends Solido{
-    public Condimento(){
+    String tipoCondimento;
+    
+    public Condimento(String tipoCondimento){
         super();
-        setNombre("Condimento");
+        this.tipoCondimento = tipoCondimento;
     }
 }

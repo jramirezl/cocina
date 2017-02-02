@@ -10,10 +10,10 @@ package receta;
  * @author Evelyn-da
  */
 public class Liquido extends Ingrediente{
+    String tipoLiquido;
     
-    
-    public Liquido(){
+    public Liquido(String tipoLiquido){
         super();
-        setNombre("Liquido");
+        this.tipoLiquido = tipoLiquido;
     }
 }

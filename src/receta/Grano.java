@@ -10,8 +10,10 @@ package receta;
  * @author Evelyn-da
  */
 public class Grano extends Solido{
-    public Grano(){
+    String tipoGrano;
+    
+    public Grano(String tipoGrano){
         super();
-        setNombre("Grano");
+        this.tipoGrano = tipoGrano;
     }
 }
