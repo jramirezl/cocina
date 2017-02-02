@@ -14,110 +14,52 @@ public abstract class Ingrediente {
 
     private String nombre;
     private int cantidad;
-    private String tipo;
-    private String tamano;
+    private String medida;//Litro, kilo, cup, onzas, 
     
     //Constructor que recibe parametros
-    public Ingrediente (String nombreIng, int cantIng, String tipoIng, String tamanoIng)
-    {
-        this.nombre = nombreIng;
-        this.cantidad = cantIng;
-        this.tipo = tipoIng;
-        this.tamano = tamanoIng;
-    }            
-    
-    //escritura
-    public void setNombre(String nombre){
+
+    /**
+     * @return the nombre
+     */
+    public String getNombre() {
+        return nombre;
+    }
+
+    /**
+     * @param nombre the nombre to set
+     */
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
-    //lectura
-    public String getNombre(){
-       return this.nombre;
+
+    /**
+     * @return the cantidad
+     */
+    public int getCantidad() {
+        return cantidad;
     }
-    
-    public void setCantidad(int cantidad){
+
+    /**
+     * @param cantidad the cantidad to set
+     */
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
-    
-    public int getCantidad(){
-        return this.cantidad;
+
+    /**
+     * @return the medida
+     */
+    public String getMedida() {
+        return medida;
     }
 
-    public String getTipo() {
-        return tipo;
+    /**
+     * @param medida the medida to set
+     */
+    public void setMedida(String medida) {
+        this.medida = medida;
     }
-
-    public void setTipo(String tipo) {        
-        this.tipo = tipo;
-    }
-        
-
-    public String getTamano() {
-        return tamano;
-    }
-
-    public void setTamano(String tamano) {
-        this.tamano = tamano;
-    }
-    
-        @Override
-    public String toString() {
-        return "Ingrediente: " + getNombre()
-                + " cantidad: " + getCantidad()
-                + " tipo: " + getTipo()
-                + "tamano" + getTamano();
-    }
-    
-    abstract public void Tamano();
+   
 }
 
-class Liquidos extends Ingrediente{
 
-    public Liquidos(String nombreIng, int cantIng, String tipoIng, String tamanoIng) {
-        super(nombreIng, cantIng, tipoIng, tamanoIng);
-    }
-    public void Tamano(){
-        
-    }
-}
-
-class Granos extends Ingrediente{
-
-    public Granos(String nombreIng, int cantIng, String tipoIng, String tamanoIng) {
-        super(nombreIng, cantIng, tipoIng, tamanoIng);
-    }
-    public void Tamano(){
-        
-    }
-}
-
-class Carnes extends Ingrediente{
-
-    public Carnes(String nombreIng, int cantIng, String tipoIng, String tamanoIng) {
-        super(nombreIng, cantIng, tipoIng, tamanoIng);
-    }
-    public void Tamano(){
-        
-    }
-}
-
-class Verduras extends Ingrediente{
-
-    public Verduras (String nombreIng, int cantIng, String tipoIng, String tamanoIng) {
-        super(nombreIng, cantIng, tipoIng, tamanoIng);
-    }
-    public void Tamano(){
-        
-    }
-}
-
-class Frutas extends Ingrediente{
-
-    public Frutas(String nombreIng, int cantIng, String tipoIng, String tamanoIng) {
-        super(nombreIng, cantIng, tipoIng, tamanoIng);
-    }
-    public void Tamano(){
-        
-    }
-}

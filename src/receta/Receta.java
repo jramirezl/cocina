@@ -15,8 +15,12 @@ public class Receta {
     private String nombre;
     private String intrucciones;   
     private String autor;
-    private Ingrediente [] ingrediente = new Ingrediente[5];
     private int indiceIngredientes = 0;
+    private Ingrediente [] ingrediente; 
+    
+    public Receta(int cantidad){
+        ingrediente = new Ingrediente[cantidad];
+    }
    
        
     public void setNombre(String nombre)
