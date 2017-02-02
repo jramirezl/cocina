@@ -11,6 +11,11 @@ package receta;
  */
 public class FrutayVerdura extends Solido{
     private boolean contable;
+    
+    public FrutayVerdura(String tipoFrutayVerdura){
+        super();
+        this.setNombre(tipoFrutayVerdura);
+    }            
 
     /**
      * @return the contable

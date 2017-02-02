@@ -4,75 +4,87 @@
  * and open the template in the editor.
  */
 package receta.controller;
+import receta.*;
 
-import receta.Ingrediente;
-import receta.Receta;
 
 /**
  *
  * @author jpramire
  */
 public class Main {
-    /*private String nombre;
-    private String intrucciones;   
-    private String autor; 
-    private Ingrediente [] ingrediente = new Ingrediente[5];*/
    
   
 
-    /*public static void main(String[] args) {
-       Receta empanadaObj = new Receta(); // nombre de la instancia empanadaObj
-       Receta ajiaco = new Receta();
-
-
-       //instaciacion. creando un objeto. pone el objeto en memoria
-       
-       //implementar encapsulamiento gettters/settters
-       //usar getter/setter para el acceso a los atributos
-
-       empanadaObj.setAutor("Flor");
-       empanadaObj.setInstrucciones("Divida la masa en triangulos y coloque los ingredientes y cierre la masa y frite");
-       empanadaObj.setNombre("Empanada");       
-       //empanadaObj.setReceta();
-              
-       Ingrediente i1 = new Ingrediente("papa", 2, "vegetal", "libras");
-       Ingrediente i2 = new Ingrediente("carne", 5, "carne", "kilogramos");
-       Ingrediente i3 = new Ingrediente("masa", 1, "harina", "libras");
-       Ingrediente i4 = new Ingrediente("aji", 3, "salsa", "onzas");
-       Ingrediente i5 = new Ingrediente("aceite", 3, "liquido", "onzas");
-       
-
-       
-       empanadaObj.agregarIngrediente(i1);
-       empanadaObj.agregarIngrediente(i2);
-       empanadaObj.agregarIngrediente(i3);
-       empanadaObj.agregarIngrediente(i4);
-       empanadaObj.agregarIngrediente(i5);
-
-        System.out.println(empanadaObj);
-
-       /////////////////////////////////AJIACO//////////////////////////////////////////////////////////
-                  
-       ajiaco.setAutor("Clotilde");
-       ajiaco.setInstrucciones("ponga los ingredientes en una olla y calientelos a fuego lento");
-       ajiaco.setNombre("Ajiaco");
-       //ajiaco.setReceta();
-       
-       Ingrediente i6 = new Ingrediente("pollo", 2, "carne");
-       Ingrediente i7 = new Ingrediente("marzorca", 5, "vegetal");
-       Ingrediente i8 = new Ingrediente("platano", 3, "vegetal");
-       Ingrediente i9 = new Ingrediente("agua", 2, "liquido");
-       
-       
-       ajiaco.agregarIngrediente(i1);
-       ajiaco.agregarIngrediente(i6);
-       ajiaco.agregarIngrediente(i7);
-       ajiaco.agregarIngrediente(i8);
-       ajiaco.agregarIngrediente(i9);
-       
-       //ajiaco.setRecetaIngredientes("agua", 1, "pollo", 2, "papa", 5, "mazorca", 3, "platano", 10);
-        System.out.println(ajiaco);
-            
-    }*/
+    public static void main(String[] args) {/*
+    
+    /******************************************HOSPITAL***********************************************/
+    /*********************Cocina*********************/
+    Cocina hospital = new Cocina(5); 
+    hospital.setNombreCocina("Childrens' Hospital");
+    hospital.setUbicacionCocina("Cincinnati,OH");
+    hospital.setAliasCocina("Primer piso"); 
+    
+    Carne iHospital1 = new Carne("Pollo");
+    iHospital1.setParte("pechuga");
+    iHospital1.setCantidad(106);
+    
+    Condimento iHospital2 = new Condimento("Aji");
+    iHospital2.setCantidad(200);
+    iHospital2.setMedida("onzas");
+    
+    FrutayVerdura iHospital3 = new FrutayVerdura("papa");
+    iHospital3.setCantidad(1);
+    iHospital3.setMedida("libraS");
+    
+    Liquido iHospital4 = new Liquido("Aceite");
+    iHospital4.setCantidad(100);
+    iHospital4.setMedida("galones");
+    
+    Grano iHospital5 = new Grano("Maiz");
+    iHospital5.setCantidad(10);
+    iHospital5.setMedida("libras");
+    
+    hospital.agregarIngCocina(iHospital1);
+    hospital.agregarIngCocina(iHospital2);
+    hospital.agregarIngCocina(iHospital3);
+    hospital.agregarIngCocina(iHospital4);
+    hospital.agregarIngCocina(iHospital5);
+    
+     /*********************Recetas*********************/
+     /*Receta empanada = new Receta(5);
+     empanada.setNombre("Empanada");
+     empanada.setAutor("Clotilde");
+     empanada.setInstrucciones("Divida la masa en triangulos y coloque los ingredientes y cierre la masa y frite");
+     
+     Ingrediente i1 = new Ingrediente("papa", 2, "vegetal");*/
+     
+    
+ /******************************************UNIVERSIDAD***********************************************/
+  /*********************Cocina*********************/
+    Cocina universidad = new Cocina(3);
+    universidad.setNombreCocina("Harvard");
+    universidad.setUbicacionCocina("Cambridge,MA");
+    universidad.setAliasCocina("Estudiantes de Maestria");    
+    
+    Carne iUniversidad1 = new Carne("Cerdo");
+    iUniversidad1.setParte("Costilla");
+    iUniversidad1.setPeso(1500);
+    iUniversidad1.setMedida("Libras");
+    
+    Liquido iUniversidad2 = new Liquido("Agua");
+    iUniversidad2.setCantidad(200);
+    iUniversidad2.setMedida("Galones");
+    
+    Condimento iUniversidad3 = new Condimento("barbecue");
+    iUniversidad3.setCantidad(100);
+    iUniversidad3.setMedida("Onzas");
+    
+    universidad.agregarIngCocina(iUniversidad1);
+    universidad.agregarIngCocina(iUniversidad2);
+    universidad.agregarIngCocina(iUniversidad3);
+    }
+     /*********************Recetas*********************/
   
 }
+
+

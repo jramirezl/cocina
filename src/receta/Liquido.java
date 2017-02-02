@@ -11,4 +11,8 @@ package receta;
  */
 public class Liquido extends Ingrediente{
     
+    public Liquido(String tipoLiquido){
+        super();
+        this.setNombre(tipoLiquido);
+    }
 }
