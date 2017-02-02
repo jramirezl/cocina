@@ -51,12 +51,37 @@ public class Main {
     hospital.agregarIngCocina(iHospital5);
     
      /*********************Recetas*********************/
-     /*Receta empanada = new Receta(5);
+     Receta empanada = new Receta(5);
      empanada.setNombre("Empanada");
      empanada.setAutor("Clotilde");
      empanada.setInstrucciones("Divida la masa en triangulos y coloque los ingredientes y cierre la masa y frite");
      
-     Ingrediente i1 = new Ingrediente("papa", 2, "vegetal");*/
+     Carne iEmpanada1 = new Carne("Pollo");
+     iEmpanada1.setParte("pechuga");
+     iEmpanada1.setPeso(1);
+     iEmpanada1.setMedida("libra");
+     
+     Condimento iEmpanada2 = new Condimento("Aji");
+     iEmpanada2.setCantidad(2);
+     iEmpanada2.setMedida("onzas");
+     
+     FrutayVerdura iEmpanada3 = new FrutayVerdura("papa");
+     iEmpanada3.setPeso(1);
+     iEmpanada3.setMedida("libra");
+     
+     Liquido iEmpanada4 = new Liquido("Aceite");
+     iEmpanada4.setCantidad(16);
+     iEmpanada4.setMedida("onzas");
+     
+     Grano iEmpanada5 = new Grano("Maiz");
+     iEmpanada5.setCantidad(1);
+     iEmpanada5.setMedida("libra");
+     
+     empanada.agregarIngrediente(iEmpanada1);
+     empanada.agregarIngrediente(iEmpanada2);
+     empanada.agregarIngrediente(iEmpanada3);
+     empanada.agregarIngrediente(iEmpanada4);
+     empanada.agregarIngrediente(iEmpanada5);
      
     
  /******************************************UNIVERSIDAD***********************************************/
@@ -71,7 +96,7 @@ public class Main {
     iUniversidad1.setPeso(1500);
     iUniversidad1.setMedida("Libras");
     
-    Liquido iUniversidad2 = new Liquido("Agua");
+    Liquido iUniversidad2 = new Liquido("Aceite");
     iUniversidad2.setCantidad(200);
     iUniversidad2.setMedida("Galones");
     
@@ -82,9 +107,28 @@ public class Main {
     universidad.agregarIngCocina(iUniversidad1);
     universidad.agregarIngCocina(iUniversidad2);
     universidad.agregarIngCocina(iUniversidad3);
-    }
+    
      /*********************Recetas*********************/
-  
+    
+    Receta costillasCerdo = new Receta(2);
+    costillasCerdo.setNombre("Costillas de Cerdo");
+    costillasCerdo.setAutor("Flor");
+    costillasCerdo.setInstrucciones("Bane las constillas de cerdo en barbecue and pongalas a las parilla al menos una hora");
+     
+    Carne iCostillasCerdo1 = new Carne("Cerdo");
+    iCostillasCerdo1.setParte("Costilla");
+    iCostillasCerdo1.setPeso(1);
+    iCostillasCerdo1.setMedida("libra");
+     
+    Condimento iCostillasCerdo2 = new Condimento("barbecue");
+    iCostillasCerdo2.setCantidad(5);
+    iCostillasCerdo2.setMedida("onzas");     
+     
+    costillasCerdo.agregarIngrediente(iCostillasCerdo1);
+    costillasCerdo.agregarIngrediente(iCostillasCerdo2);
+    
+    }
+
 }
 
 
