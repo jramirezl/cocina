@@ -78,8 +78,8 @@ public class Main {
     iUniversidad3.setMedida("Onzas");
     
     universidad.agregarIngCocina(iUniversidad1);
-    universidad.agregarIngCocina(ihospital2);
-    universidad.agregarIngCocina(ihospital3);
+    universidad.agregarIngCocina(iUniversidad2);
+    universidad.agregarIngCocina(iUniversidad3);
     }
      /*********************Recetas*********************/
   
