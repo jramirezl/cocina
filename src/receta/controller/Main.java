@@ -22,7 +22,7 @@ public class Main {
     Cocina hospital = new Cocina(5); 
     hospital.setNombreCocina("Childrens' Hospital");
     hospital.setUbicacionCocina("Cincinnati,OH");
-    hospital.setAliasCocina("Primer piso");    
+    hospital.setAliasCocina("Primer piso"); 
     
     Carne ihospital1 = new Carne("Pollo");
     ihospital1.setParte("pechuga");
@@ -44,8 +44,19 @@ public class Main {
     ihospital5.setCantidad(10);
     ihospital5.setMedida("libras");
     
+    hospital.agregarIngCocina(ihospital1);
+    hospital.agregarIngCocina(ihospital2);
+    hospital.agregarIngCocina(ihospital3);
+    hospital.agregarIngCocina(ihospital4);
+    hospital.agregarIngCocina(ihospital5);
+    
      /*********************Recetas*********************/
-
+    /* Receta empanada = new Receta(5);
+     empanada.setNombre("Empanada");
+     empanada.setAutor("Clotilde");
+     empanada.setInstrucciones("Divida la masa en triangulos y coloque los ingredientes y cierre la masa y frite");
+     Ingrediente i1 = new Ingrediente("papa", 2, "vegetal");*/
+     
     
  /******************************************UNIVERSIDAD***********************************************/
   /*********************Cocina*********************/
@@ -66,6 +77,9 @@ public class Main {
     iUniversidad3.setCantidad(100);
     iUniversidad3.setMedida("Onzas");
     
+    universidad.agregarIngCocina(iUniversidad1);
+    universidad.agregarIngCocina(ihospital2);
+    universidad.agregarIngCocina(ihospital3);
     }
      /*********************Recetas*********************/
   
