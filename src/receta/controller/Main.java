@@ -44,19 +44,19 @@ public class Main {
     iHospital5.setCantidad(10);
     iHospital5.setMedida("libras");
     
-    hospital.agregarIngCocina(ihospital1);
-    hospital.agregarIngCocina(ihospital2);
+    hospital.agregarIngCocina(iHospital1);
+    hospital.agregarIngCocina(iHospital2);
     hospital.agregarIngCocina(iHospital3);
     hospital.agregarIngCocina(iHospital4);
     hospital.agregarIngCocina(iHospital5);
     
      /*********************Recetas*********************/
-     Receta empanada = new Receta(5);
+     /*Receta empanada = new Receta(5);
      empanada.setNombre("Empanada");
      empanada.setAutor("Clotilde");
      empanada.setInstrucciones("Divida la masa en triangulos y coloque los ingredientes y cierre la masa y frite");
      
-     Ingrediente i1 = new Ingrediente("papa", 2, "vegetal");
+     Ingrediente i1 = new Ingrediente("papa", 2, "vegetal");*/
      
     
  /******************************************UNIVERSIDAD***********************************************/
