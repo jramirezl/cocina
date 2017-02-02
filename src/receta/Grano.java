@@ -10,5 +10,8 @@ package receta;
  * @author Evelyn-da
  */
 public class Grano extends Solido{
-    
+    public Grano(){
+        super();
+        setNombre("Grano");
+    }
 }

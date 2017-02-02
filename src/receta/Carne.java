@@ -11,6 +11,11 @@ package receta;
  */
 public class Carne extends Solido{
     private String parte;
+    
+    public Carne(){
+        super();
+        setNombre("Carne");
+    }
 
     /**
      * @return the parte

@@ -10,5 +10,8 @@ package receta;
  * @author Evelyn-da
  */
 public class Condimento extends Solido{
-    
+    public Condimento(){
+        super();
+        setNombre("Condimento");
+    }
 }

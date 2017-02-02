@@ -11,4 +11,9 @@ package receta;
  */
 public class Liquido extends Ingrediente{
     
+    
+    public Liquido(){
+        super();
+        setNombre("Liquido");
+    }
 }

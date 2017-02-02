@@ -11,10 +11,11 @@ package receta;
  */
 public class Solido extends Ingrediente{
      private int peso;
-
-    /**
-     * @return the peso
-     */
+     
+    public Solido (){
+        super();
+    }
+    
     public int getPeso() {
         return peso;
     }
