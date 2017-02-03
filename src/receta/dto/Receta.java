@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package receta;
+package receta.dto;
 
+import receta.dto.def.Ingrediente;
 import java.util.Arrays;
 /**
  *
@@ -58,7 +59,6 @@ public class Receta {
         return "\nReceta: " + this.getNombre() +
                 "\nAutor: " + this.getAutor() +
                 "\nIngredientes: " + Arrays.toString(this.getIngrediente()) +
-                "\nIngredientes: " + this.getIngrediente() +
                 "\nIntrucciones: " + this.getInstrucciones();
     }
     

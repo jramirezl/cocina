@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package receta;
+package receta.dto.def;
 
 /**
  *
@@ -60,7 +60,12 @@ public abstract class Ingrediente {
         this.medida = medida;
     }
     
-    public abstract void setUsar(int cantidad, String medida);
+    public abstract void usarIngrediente(int cantidad, String medida);
+    
+    @Override
+    public String toString(){
+        return "Nombre: " + nombre + " Cantidad: " +cantidad + " Medida: " + medida; 
+    }
 
 }
 
