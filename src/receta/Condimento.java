@@ -15,4 +15,11 @@ public class Condimento extends Solido{
         super();
         this.setNombre(tipoCondimento);
     }
+    
+    @Override
+    public String toString() {
+        return "\n     *Nombre: " + this.getNombre()+
+               "\n     Cantidad: " + this.getCantidad()+
+               "\n     Medida: " + this.getMedida(); 
+    }
 }

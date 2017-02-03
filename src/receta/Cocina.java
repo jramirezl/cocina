@@ -105,6 +105,13 @@ public class Cocina {
         this.ingCocina = ingredienteCocina;
     }
     
+    @Override
+    public String toString() {
+        return "\nCocina: " + this.getNombreCocina()+
+                "\nUbicacion: " + this.getUbicacionCocina()+
+                "\nAlias: " + this.getAliasCocina()+
+                "\nIngredientes: " + Arrays.toString(this.getIngrediente()); 
+    }
     
 }
 

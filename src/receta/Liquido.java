@@ -15,4 +15,16 @@ public class Liquido extends Ingrediente{
         super();
         this.setNombre(tipoLiquido);
     }
+    
+    public void setUsar(int cantidad, String medida){
+        this.setCantidad(cantidad);
+        this.setMedida(medida);
+    }
+    
+    @Override
+    public String toString() {
+        return "\n    *Nombre: " + this.getNombre()+
+               "\n     Cantidad: " + this.getCantidad()+
+               "\n     Medida: " + this.getMedida(); 
+    }
 }
