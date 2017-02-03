@@ -14,6 +14,12 @@ public class Grano extends Solido{
     public Grano(String tipoGrano){
         super();
         this.setNombre(tipoGrano);
-        
+    }
+    
+    @Override
+    public String toString() {
+        return "\n     *Nombre: " + this.getNombre()+
+                "\n     Cantidad: " + this.getCantidad()+
+                "\n     Medida: " + this.getMedida(); 
     }
 }

@@ -26,4 +26,10 @@ public class Solido extends Ingrediente{
     public void setPeso(int peso) {
         this.peso = peso;
     }
+    
+    public void setUsar(int cantidad, String medida){
+        this.setCantidad(cantidad);
+        this.setMedida(medida);
+        
+    }
 }

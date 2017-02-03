@@ -56,9 +56,10 @@ public class Receta {
     @Override
     public String toString() {
         return "\nReceta: " + this.getNombre() +
-                           "\nAutor: " + this.getAutor() +
-                            "\n Ingredientes: " + Arrays.toString(this.getIngrediente()) +
-                           "\n Intrucciones: " + this.getInstrucciones();
+                "\nAutor: " + this.getAutor() +
+                "\nIngredientes: " + Arrays.toString(this.getIngrediente()) +
+                "\nIngredientes: " + this.getIngrediente() +
+                "\nIntrucciones: " + this.getInstrucciones();
     }
     
 
@@ -83,6 +84,5 @@ public class Receta {
         indiceIngredientes++;
         
     }
-    
-   
+
 }

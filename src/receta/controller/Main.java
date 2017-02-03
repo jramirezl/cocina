@@ -22,33 +22,31 @@ public class Main {
     Cocina hospital = new Cocina(5); 
     hospital.setNombreCocina("Childrens' Hospital");
     hospital.setUbicacionCocina("Cincinnati,OH");
-    hospital.setAliasCocina("Primer piso"); 
+    hospital.setAliasCocina("Primer piso");
     
     Carne iHospital1 = new Carne("Pollo");
     iHospital1.setParte("pechuga");
-    iHospital1.setCantidad(106);
+    iHospital1.setUsar(106, "piezas");
     
     Condimento iHospital2 = new Condimento("Aji");
-    iHospital2.setCantidad(200);
-    iHospital2.setMedida("onzas");
+    iHospital2.setUsar(200, "onzas");
     
     FrutayVerdura iHospital3 = new FrutayVerdura("papa");
-    iHospital3.setCantidad(1);
-    iHospital3.setMedida("libraS");
+    iHospital3.setUsar(1, "libra");
     
     Liquido iHospital4 = new Liquido("Aceite");
-    iHospital4.setCantidad(100);
-    iHospital4.setMedida("galones");
+    iHospital4.setUsar(100, "galones");
     
     Grano iHospital5 = new Grano("Maiz");
-    iHospital5.setCantidad(10);
-    iHospital5.setMedida("libras");
+    iHospital5.setUsar(10, "libras");
     
     hospital.agregarIngCocina(iHospital1);
     hospital.agregarIngCocina(iHospital2);
     hospital.agregarIngCocina(iHospital3);
     hospital.agregarIngCocina(iHospital4);
     hospital.agregarIngCocina(iHospital5);
+    
+    System.out.println(hospital);
     
      /*********************Recetas*********************/
      Receta empanada = new Receta(5);
@@ -58,30 +56,27 @@ public class Main {
      
      Carne iEmpanada1 = new Carne("Pollo");
      iEmpanada1.setParte("pechuga");
-     iEmpanada1.setPeso(1);
-     iEmpanada1.setMedida("libra");
+     iEmpanada1.setUsar(1, "libra");
      
      Condimento iEmpanada2 = new Condimento("Aji");
-     iEmpanada2.setCantidad(2);
-     iEmpanada2.setMedida("onzas");
+     iEmpanada2.setUsar(2, "onzas");
      
      FrutayVerdura iEmpanada3 = new FrutayVerdura("papa");
-     iEmpanada3.setPeso(1);
-     iEmpanada3.setMedida("libra");
+     iEmpanada3.setUsar(1, "libra");
      
      Liquido iEmpanada4 = new Liquido("Aceite");
-     iEmpanada4.setCantidad(16);
-     iEmpanada4.setMedida("onzas");
+     iEmpanada4.setUsar(16, "onzas");
      
      Grano iEmpanada5 = new Grano("Maiz");
-     iEmpanada5.setCantidad(1);
-     iEmpanada5.setMedida("libra");
+     iEmpanada5.setUsar(1, "libra");
      
      empanada.agregarIngrediente(iEmpanada1);
      empanada.agregarIngrediente(iEmpanada2);
      empanada.agregarIngrediente(iEmpanada3);
      empanada.agregarIngrediente(iEmpanada4);
      empanada.agregarIngrediente(iEmpanada5);
+     
+     System.out.println(empanada);
      
     
  /******************************************UNIVERSIDAD***********************************************/
@@ -93,20 +88,19 @@ public class Main {
     
     Carne iUniversidad1 = new Carne("Cerdo");
     iUniversidad1.setParte("Costilla");
-    iUniversidad1.setPeso(1500);
-    iUniversidad1.setMedida("Libras");
+    iUniversidad1.setUsar(1500, "libras");
     
     Liquido iUniversidad2 = new Liquido("Aceite");
-    iUniversidad2.setCantidad(200);
-    iUniversidad2.setMedida("Galones");
+    iUniversidad2.setUsar(200, "Galones");
     
     Condimento iUniversidad3 = new Condimento("barbecue");
-    iUniversidad3.setCantidad(100);
-    iUniversidad3.setMedida("Onzas");
+    iUniversidad3.setUsar(100, "onzas");
     
     universidad.agregarIngCocina(iUniversidad1);
     universidad.agregarIngCocina(iUniversidad2);
     universidad.agregarIngCocina(iUniversidad3);
+    
+    System.out.println(universidad);
     
      /*********************Recetas*********************/
     
@@ -117,15 +111,15 @@ public class Main {
      
     Carne iCostillasCerdo1 = new Carne("Cerdo");
     iCostillasCerdo1.setParte("Costilla");
-    iCostillasCerdo1.setPeso(1);
-    iCostillasCerdo1.setMedida("libra");
+    iCostillasCerdo1.setUsar(1, "libra");
      
     Condimento iCostillasCerdo2 = new Condimento("barbecue");
-    iCostillasCerdo2.setCantidad(5);
-    iCostillasCerdo2.setMedida("onzas");     
+    iCostillasCerdo2.setUsar(5, "onzas");  
      
     costillasCerdo.agregarIngrediente(iCostillasCerdo1);
     costillasCerdo.agregarIngrediente(iCostillasCerdo2);
+    
+    System.out.println(costillasCerdo);
     
     }
 

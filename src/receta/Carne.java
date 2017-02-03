@@ -5,6 +5,8 @@
  */
 package receta;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Evelyn-da
@@ -31,4 +33,11 @@ public class Carne extends Solido{
         this.parte = parte;
     }
     
+    @Override
+    public String toString() {
+        return "\n     *Nombre: " + this.getNombre()+
+                "\n     Parte: " + this.getParte()+
+                "\n     Cantidad: " + this.getCantidad()+
+                "\n     Medida: " + this.getMedida(); 
+    }
 }

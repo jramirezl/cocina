@@ -59,7 +59,9 @@ public abstract class Ingrediente {
     public void setMedida(String medida) {
         this.medida = medida;
     }
-   
+    
+    public abstract void setUsar(int cantidad, String medida);
+
 }
 
 

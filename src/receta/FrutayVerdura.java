@@ -31,4 +31,11 @@ public class FrutayVerdura extends Solido{
         this.contable = contable;
     }
     
+    @Override
+    public String toString() {
+        return "\n     *Nombre: " + this.getNombre()+
+                "\n     Cantidad: " + this.getCantidad()+
+                "\n     Medida: " + this.getMedida(); 
+    }
+    
 }
