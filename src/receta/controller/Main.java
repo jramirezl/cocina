@@ -4,7 +4,13 @@
  * and open the template in the editor.
  */
 package receta.controller;
-import receta.*;
+import receta.dto.Condimento;
+import receta.dto.Grano;
+import receta.dto.Liquido;
+import receta.dto.Receta;
+import receta.dto.Carne;
+import receta.dto.FrutayVerdura;
+import receta.dto.Cocina;
 
 
 /**
@@ -26,19 +32,25 @@ public class Main {
     
     Carne iHospital1 = new Carne("Pollo");
     iHospital1.setParte("pechuga");
-    iHospital1.setUsar(106, "piezas");
+    iHospital1.setCantidad(106);
+    iHospital1.setMedida("piezas");
     
     Condimento iHospital2 = new Condimento("Aji");
-    iHospital2.setUsar(200, "onzas");
+    iHospital2.setCantidad(200);
+    iHospital2.setMedida("onzas");
     
     FrutayVerdura iHospital3 = new FrutayVerdura("papa");
-    iHospital3.setUsar(1, "libra");
+    iHospital3.setCantidad(1);
+    iHospital3.setMedida("libra");
     
     Liquido iHospital4 = new Liquido("Aceite");
-    iHospital4.setUsar(100, "galones");
+    iHospital4.usarIngrediente(100, "galones");
+    iHospital4.setCantidad(100);
+    iHospital4.setMedida("galones");
     
     Grano iHospital5 = new Grano("Maiz");
-    iHospital5.setUsar(10, "libras");
+    iHospital5.setCantidad(10);
+    iHospital5.setMedida("libras");
     
     hospital.agregarIngCocina(iHospital1);
     hospital.agregarIngCocina(iHospital2);
@@ -56,19 +68,24 @@ public class Main {
      
      Carne iEmpanada1 = new Carne("Pollo");
      iEmpanada1.setParte("pechuga");
-     iEmpanada1.setUsar(1, "libra");
+     iEmpanada1.setCantidad(1);
+     iEmpanada1.setMedida("libra");
      
      Condimento iEmpanada2 = new Condimento("Aji");
-     iEmpanada2.setUsar(2, "onzas");
+     iEmpanada2.setCantidad(2);
+     iEmpanada2.setMedida("onzas");
      
      FrutayVerdura iEmpanada3 = new FrutayVerdura("papa");
-     iEmpanada3.setUsar(1, "libra");
+     iEmpanada3.setCantidad(1);
+     iEmpanada3.setMedida("libra");    
      
      Liquido iEmpanada4 = new Liquido("Aceite");
-     iEmpanada4.setUsar(16, "onzas");
+     iEmpanada4.setCantidad(16);
+     iEmpanada4.setMedida("onzas");     
      
      Grano iEmpanada5 = new Grano("Maiz");
-     iEmpanada5.setUsar(1, "libra");
+     iEmpanada5.setCantidad(1);
+     iEmpanada5.setMedida("libra");    
      
      empanada.agregarIngrediente(iEmpanada1);
      empanada.agregarIngrediente(iEmpanada2);
@@ -88,13 +105,18 @@ public class Main {
     
     Carne iUniversidad1 = new Carne("Cerdo");
     iUniversidad1.setParte("Costilla");
-    iUniversidad1.setUsar(1500, "libras");
+    iUniversidad1.setCantidad(1500);
+    iUniversidad1.setMedida("libras"); 
+    
     
     Liquido iUniversidad2 = new Liquido("Aceite");
-    iUniversidad2.setUsar(200, "Galones");
+    iUniversidad2.setCantidad(200);
+    iUniversidad2.setMedida("Galones"); 
     
     Condimento iUniversidad3 = new Condimento("barbecue");
-    iUniversidad3.setUsar(100, "onzas");
+    iUniversidad3.setCantidad(100);
+    iUniversidad3.setMedida("onzas"); 
+    
     
     universidad.agregarIngCocina(iUniversidad1);
     universidad.agregarIngCocina(iUniversidad2);
@@ -111,10 +133,13 @@ public class Main {
      
     Carne iCostillasCerdo1 = new Carne("Cerdo");
     iCostillasCerdo1.setParte("Costilla");
-    iCostillasCerdo1.setUsar(1, "libra");
+    iCostillasCerdo1.setCantidad(1);
+    iCostillasCerdo1.setMedida("libra"); 
+    
      
-    Condimento iCostillasCerdo2 = new Condimento("barbecue");
-    iCostillasCerdo2.setUsar(5, "onzas");  
+    Condimento iCostillasCerdo2 = new Condimento("barbecue"); 
+    iCostillasCerdo2.setCantidad(5);
+    iCostillasCerdo2.setMedida("onzas"); 
      
     costillasCerdo.agregarIngrediente(iCostillasCerdo1);
     costillasCerdo.agregarIngrediente(iCostillasCerdo2);

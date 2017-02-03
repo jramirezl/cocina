@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package receta;
+package receta.dto;
 
+import receta.dto.def.Solido;
 import java.util.Arrays;
 
 /**
@@ -35,9 +36,6 @@ public class Carne extends Solido{
     
     @Override
     public String toString() {
-        return "\n     *Nombre: " + this.getNombre()+
-                "\n     Parte: " + this.getParte()+
-                "\n     Cantidad: " + this.getCantidad()+
-                "\n     Medida: " + this.getMedida(); 
+        return super.toString() + " Parte: " +parte;
     }
 }

@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package receta;
+package receta.dto;
+
+import receta.dto.def.Solido;
 
 /**
  *
@@ -14,12 +16,5 @@ public class Grano extends Solido{
     public Grano(String tipoGrano){
         super();
         this.setNombre(tipoGrano);
-    }
-    
-    @Override
-    public String toString() {
-        return "\n     *Nombre: " + this.getNombre()+
-                "\n     Cantidad: " + this.getCantidad()+
-                "\n     Medida: " + this.getMedida(); 
     }
 }

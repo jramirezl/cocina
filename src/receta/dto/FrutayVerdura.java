@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package receta;
+package receta.dto;
+
+import receta.dto.def.Solido;
 
 /**
  *
@@ -33,9 +35,7 @@ public class FrutayVerdura extends Solido{
     
     @Override
     public String toString() {
-        return "\n     *Nombre: " + this.getNombre()+
-                "\n     Cantidad: " + this.getCantidad()+
-                "\n     Medida: " + this.getMedida(); 
+        return super.toString() + " Contable: " +contable;
     }
     
 }
