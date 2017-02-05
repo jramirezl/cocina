@@ -63,10 +63,6 @@ public abstract class Ingrediente {
     
     public abstract void usarIngrediente(Ingrediente ingrediente);
     
-    @Override
-    public String toString(){
-        return "Nombre: " + nombre + " Cantidad: " +cantidad + " Medida: " + medida; 
-    }
 
     /**
      * @return the valor
@@ -82,7 +78,10 @@ public abstract class Ingrediente {
         this.valor = valor;
     }
     
-    
+@Override
+    public String toString(){
+        return "Nombre: " + nombre + " Cantidad: " +cantidad + " Medida: " + medida + "Valor: " + valor; 
+    }    
     
 }
 
