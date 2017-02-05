@@ -31,17 +31,26 @@ public class Main {
         //abstraccion de subclase a superclase
         //leer de herencia 
         Cargador cargador = new CargaManual();
-
+        
         Cocina [] misCocinas = cargador.cargarCocinas();
         Receta [] misRecetas = cargador.cargarRecetas();
          
         for (int i = 0; i < misCocinas.length; i++){
-            System.out.print("Mis Cocinas en la posicion i"+ misCocinas[i]);
+            //System.out.print("Mis Cocinas en la posicion i"+ misCocinas[i]);
         }
 
         for (int i = 0; i < misRecetas.length; i++){
-                System.out.print("Mis Recetas en la posicion i" + misRecetas[i]);
+                //System.out.print("Mis Recetas en la posicion i" + misRecetas[i]);
             }
+        
+        Chef esaChef = new Chef();
+        System.out.println("El antes: cocina[0]" + misCocinas[0]);
+        System.out.println("El antes: cocina[1]" + misCocinas[1]);
+        
+        esaChef.cocinarReceta(misCocinas[0], misRecetas[1]);
+        System.out.println("El despues: cocina[0]" + misCocinas[0]);
+        System.out.println("El despues: cocina[1]" + misCocinas[1]);
+        System.out.println("El despues: Receta[1]" + misRecetas[1]);
     }
         
 

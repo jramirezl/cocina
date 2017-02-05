@@ -80,7 +80,7 @@ public abstract class Ingrediente {
     
 @Override
     public String toString(){
-        return "Nombre: " + nombre + " Cantidad: " +cantidad + " Medida: " + medida + "Valor: " + valor; 
+        return "Nombre: " + nombre + " Cantidad: " +cantidad + " Medida: " + medida + " Valor: " + valor; 
     }    
     
 }
