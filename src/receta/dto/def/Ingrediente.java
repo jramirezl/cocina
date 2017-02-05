@@ -15,6 +15,7 @@ public abstract class Ingrediente {
     private String nombre;
     private int cantidad;
     private String medida;//Litro, kilo, cup, onzas, 
+    private double valor;
     
     //Constructor que recibe parametros
 
@@ -62,10 +63,25 @@ public abstract class Ingrediente {
     
     public abstract void usarIngrediente(Ingrediente ingrediente);
     
-    @Override
-    public String toString(){
-        return "Nombre: " + nombre + " Cantidad: " +cantidad + " Medida: " + medida; 
+
+    /**
+     * @return the valor
+     */
+    public double getValor() {
+        return valor;
     }
+
+    /**
+     * @param valor the valor to set
+     */
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+    
+@Override
+    public String toString(){
+        return "Nombre: " + nombre + " Cantidad: " +cantidad + " Medida: " + medida + "Valor: " + valor; 
+    }    
     
 }
 
