@@ -60,13 +60,12 @@ public abstract class Ingrediente {
         this.medida = medida;
     }
     
-    public abstract void usarIngrediente(int cantidad, String medida);
+    public abstract void usarIngrediente(Ingrediente ingrediente);
     
     @Override
     public String toString(){
         return "Nombre: " + nombre + " Cantidad: " +cantidad + " Medida: " + medida; 
     }
-
+    
 }
-
 

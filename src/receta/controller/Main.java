@@ -12,6 +12,7 @@ import receta.dto.Receta;
 import receta.dto.Carne;
 import receta.dto.FrutayVerdura;
 import receta.dto.Cocina;
+import receta.dto.def.Ingrediente;
 import receta.utilidades.CargaManual;
 import receta.utilidades.Cargador;
 
@@ -29,21 +30,18 @@ public class Main {
         
         //abstraccion de subclase a superclase
         //leer de herencia 
-        
         Cargador cargador = new CargaManual();
 
         Cocina [] misCocinas = cargador.cargarCocinas();
         Receta [] misRecetas = cargador.cargarRecetas();
          
-        //imprimir cada cocina
         for (int i = 0; i < misCocinas.length; i++){
             System.out.print("Mis Cocinas en la posicion i"+ misCocinas[i]);
         }
-        // imprimir cada receta
+
         for (int i = 0; i < misRecetas.length; i++){
                 System.out.print("Mis Recetas en la posicion i" + misRecetas[i]);
-            }      
-        
+            }
     }
         
 

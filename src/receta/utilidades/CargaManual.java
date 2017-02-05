@@ -13,6 +13,8 @@ import receta.dto.Condimento;
 import receta.dto.FrutayVerdura;
 import receta.dto.Grano;
 import receta.dto.Liquido;
+import receta.dto.def.Ingrediente;
+import receta.controller.Chef;
 
 
 /**
@@ -45,7 +47,6 @@ public class CargaManual implements Cargador{
         iHospital3.setMedida("libra");
 
         Liquido iHospital4 = new Liquido("Aceite");
-        iHospital4.usarIngrediente(100, "galones");
         iHospital4.setCantidad(100);
         iHospital4.setMedida("galones");
 
@@ -86,7 +87,7 @@ public class CargaManual implements Cargador{
         universidad.agregarIngCocina(iUniversidad3);
 
         cocinas[1] = universidad;
-        //System.out.println("Cocinas desde Carga Manual: "+ Arrays.toString(cocinas));
+        System.out.println("Cocinas desde Carga Manual: "+ Arrays.toString(cocinas));
         return cocinas;
 
     }
@@ -104,6 +105,7 @@ public class CargaManual implements Cargador{
         iEmpanada1.setParte("pechuga");
         iEmpanada1.setCantidad(1);
         iEmpanada1.setMedida("libra");
+        //iEmpanada1.usarIngrediente(empanada.getIngrediente());
 
         Condimento iEmpanada2 = new Condimento("Aji");
         iEmpanada2.setCantidad(2);
