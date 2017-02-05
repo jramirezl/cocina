@@ -28,12 +28,12 @@ public class Solido extends Ingrediente{
     }
     
     @Override
-    public void usarIngrediente(int cantidad, String medida){
+    public void usarIngrediente(Ingrediente ingrediente){ 
         //se va obviar la conversion de medidas queda pendiente para una futura version
         //Por ejempo si se necesita un TBS or TBSP de peper etc hay q convertir eso a peso
-        if(this.getCantidad() > cantidad){ 
-            if(this.getMedida().equals(medida)){
-                this.setCantidad(this.getCantidad()- cantidad);
+        if(this.getCantidad() > ingrediente.getCantidad()){ 
+            if(this.getMedida().equals(ingrediente.getMedida())){
+                this.setCantidad(this.getCantidad() - ingrediente.getCantidad());
             }else{
                 System.out.println("se debe hacer una conversion");
             }
