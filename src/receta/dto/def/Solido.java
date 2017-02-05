@@ -29,7 +29,7 @@ public class Solido extends Ingrediente{
     
     @Override
     public void usarIngrediente(int cantidad, String medida){
-        //se va oviar la conversion de medidas queda pendiente para una futura version
+        //se va obviar la conversion de medidas queda pendiente para una futura version
         //Por ejempo si se necesita un TBS or TBSP de peper etc hay q convertir eso a peso
         if(this.getCantidad() > cantidad){ 
             if(this.getMedida().equals(medida)){
