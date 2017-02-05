@@ -84,5 +84,6 @@ public class Receta {
         indiceIngredientes++;
         
     }
+    
 
 }
