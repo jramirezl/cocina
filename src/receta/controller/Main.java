@@ -34,14 +34,14 @@ public class Main {
 
         Cocina [] misCocinas = cargador.cargarCocinas();
         Receta [] misRecetas = cargador.cargarRecetas();
-        
+         
         //imprimir cada cocina
-        for (int i = 0; i <= misCocinas.length; i++){
-            System.out.println("Mis Cocinas desde el Main"+Arrays.toString(misCocinas));
+        for (int i = 0; i < misCocinas.length; i++){
+            System.out.print("Mis Cocinas en la posicion i"+ misCocinas[i]);
         }
         // imprimir cada receta
-        for (int i = 0; i <= misRecetas.length; i++){
-                System.out.println("Mis Recetas desde el Main"+Arrays.toString(misRecetas));
+        for (int i = 0; i < misRecetas.length; i++){
+                System.out.print("Mis Recetas en la posicion i" + misRecetas[i]);
             }      
         
     }

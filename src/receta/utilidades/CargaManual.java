@@ -86,7 +86,7 @@ public class CargaManual implements Cargador{
         universidad.agregarIngCocina(iUniversidad3);
 
         cocinas[1] = universidad;
-        System.out.println("Cocinas desde Carga Manual: "+ Arrays.toString(cocinas));
+        //System.out.println("Cocinas desde Carga Manual: "+ Arrays.toString(cocinas));
         return cocinas;
 
     }
@@ -147,7 +147,7 @@ public class CargaManual implements Cargador{
         costillasCerdo.agregarIngrediente(iCostillasCerdo2);        
         
         recetas[1] = costillasCerdo;
-        System.out.println("Recetas desde Carga Manual: "+ Arrays.toString(recetas));
+        //System.out.println("Recetas desde Carga Manual: "+ Arrays.toString(recetas));
         return recetas;
     }
 
