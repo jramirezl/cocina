@@ -66,7 +66,16 @@ public abstract class Ingrediente {
     public String toString(){
         return "Nombre: " + nombre + " Cantidad: " +cantidad + " Medida: " + medida; 
     }
+    
+    public boolean equals(Ingrediente ingrediente){
+        if( (ingrediente != null) && (ingrediente instanceof Ingrediente) ) {
+            Ingrediente temp = (Ingrediente)ingrediente;
+            return( this.nombre == temp.nombre );
+            }
+        else {
+            return( false );
+            }        
+    }   
 
 }
-
 
