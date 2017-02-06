@@ -33,14 +33,6 @@ public class Main {
         
         Cocina [] misCocinas = cargador.cargarCocinas();
         Receta [] misRecetas = cargador.cargarRecetas();
-         
-        for (int i = 0; i < misCocinas.length; i++){
-            //System.out.print("Mis Cocinas en la posicion i"+ misCocinas[i]);
-        }
-
-        for (int i = 0; i < misRecetas.length; i++){
-                //System.out.print("Mis Recetas en la posicion i" + misRecetas[i]);
-            }
 
         System.out.println("El antes: cocina[0]" + misCocinas[0]);
         System.out.println("El antes: Receta[0]" + misRecetas[0]);
@@ -48,7 +40,7 @@ public class Main {
         esaChef.cocinarReceta(misCocinas[0], misRecetas[0]);
         System.out.println("El despues: cocina[0]" + misCocinas[0]);
         
-        esaChef.valorReceta(misRecetas, "Empanada");
+        System.out.println(esaChef.valorReceta(misRecetas, "Empanada"));
 
     }
         

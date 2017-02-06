@@ -28,7 +28,7 @@ public class Chef {
         for (int i = 0; i < ingredientesReceta.length; i++){
             for (int j = 0; j < ingredientesCocina.length; j++){
                 if (ingredientesReceta[i].getNombre().equals(ingredientesCocina[j].getNombre())){
-                    ingredientesReceta[i].usarIngrediente(ingredientesCocina[j]);
+                    ingredientesCocina[i].usarIngrediente(ingredientesReceta[j]);
                 }
             }
         }
