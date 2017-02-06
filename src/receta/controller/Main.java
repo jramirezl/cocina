@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package receta.controller;
-import java.util.Arrays;
 import receta.dto.Condimento;
 import receta.dto.Grano;
 import receta.dto.Liquido;
@@ -12,7 +11,6 @@ import receta.dto.Receta;
 import receta.dto.Carne;
 import receta.dto.FrutayVerdura;
 import receta.dto.Cocina;
-import receta.dto.def.Ingrediente;
 import receta.utilidades.CargaManual;
 import receta.utilidades.Cargador;
 
