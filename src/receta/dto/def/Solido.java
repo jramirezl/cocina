@@ -35,9 +35,9 @@ public class Solido extends Ingrediente{
             if(this.getMedida().equals(ingrediente.getMedida())){
                 this.setCantidad(this.getCantidad() - ingrediente.getCantidad());
             }else{
-                System.out.println("se debe hacer una conversion");
+                System.out.println("se debe hacer una conversion-Solido");
             }
-            System.out.println("se debe hacer una conversion");  
+            System.out.println("No hay inventario suficiente - Solido");  
         }
     }
     
