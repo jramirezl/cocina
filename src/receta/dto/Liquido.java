@@ -24,11 +24,11 @@ public class Liquido extends Ingrediente{
         //Por ejempo si se necesita one cup etc
         if(this.getCantidad() > ingrediente.getCantidad()){ 
             if(this.getMedida().equals(ingrediente.getMedida())){
-                this.setCantidad(this.getCantidad()- ingrediente.getCantidad());
+                this.setCantidad(this.getCantidad() - ingrediente.getCantidad());
             }else{
-                System.out.println("se debe hacer una conversion");
+                System.out.println("se debe hacer una conversion-Liquido");
             }
-            System.out.println("no hay inventario suficiente");  
+            System.out.println("no hay inventario suficiente-Liquido");  
         }
     }
     
