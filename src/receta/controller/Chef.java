@@ -25,6 +25,7 @@ public class Chef {
             for (int j = 0; j < ingredientesCocina.length; j++){
                 if (ingredientesReceta[i].getNombre().equals(ingredientesCocina[j].getNombre()))
                     ingredientesReceta[i].usarIngrediente(ingredientesCocina[j]);
+                    System.out.println("se uso ingrediente");
             }
         }
     }

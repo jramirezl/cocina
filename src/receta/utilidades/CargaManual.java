@@ -28,6 +28,7 @@ public class CargaManual implements Cargador{
     public Cocina[] cargarCocinas(){
         Cocina[] cocinas = new Cocina[2];
         Cocina hospital = new Cocina(5); 
+        Chef esaChef = new Chef();
         
         hospital.setNombreCocina("Childrens' Hospital");
         hospital.setUbicacionCocina("Cincinnati,OH");
