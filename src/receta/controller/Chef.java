@@ -6,6 +6,7 @@
 package receta.controller;
 
 import receta.dto.Cocina;
+import receta.dto.FrutayVerdura;
 import receta.dto.Receta;
 import receta.dto.def.Ingrediente;
 import receta.dto.def.Solido;
@@ -48,18 +49,29 @@ public class Chef {
         return valor1;
     }
     
-    public void calcularValorReceta(Receta[] recetas, String ingrediente){
+    public void buscarRecetasPorIngrediente(Receta[] recetas, String ingrediente){
          for (int i = 0; i < recetas.length; i++){
-             for (int j = 0; j < recetas[i].getIngrediente().length; j++){
+             boolean encontroIngrediente = false;
+             for (int j = 0; j < recetas[i].getIngrediente().length && !encontroIngrediente; j++){ //Recorra mientras sea falso
                 if (recetas[i].getIngrediente()[j].getNombre().equals(ingrediente)){
-                    System.out.println("Puedes usar la receta: " + recetas[i].getNombre() + " con el ingrediente: " + ingrediente);
+                    encontroIngrediente = true;
                 }
+             }
+             if (encontroIngrediente){
+                System.out.println("Puedes usar la receta: " + recetas[i].getNombre() + " con el ingrediente: " + ingrediente);
+             }else{
+                 System.out.println("Lo sentimos, no tenemos recetas con el ingrediente: " + ingrediente);
              }
          }
     }
     
-    public void NumeroVerduras(Cocina[] cocinas){
+    public void numeroVerduras(Cocina[] cocinas){
         for (int i = 0; i < cocinas.length; i++){
+        }
+    }
+    
+    public void calcularReceta(Cocina[] cocina, Receta[] receta){
+        for (int i = 0; i < cocina.length; i++){
             
         }
     }
