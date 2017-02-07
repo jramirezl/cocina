@@ -51,8 +51,9 @@ public class Chef {
     public void CalcularValorReceta(Receta[] recetas, String ingrediente){
          for (int i = 0; i < recetas.length; i++){
              for (int j = 0; j < recetas[i].getIngrediente().length; j++){
-                if (recetas[i].getIngrediente()[j].getNombre().equals(ingrediente))
-                    System.out.println("Puedes usar la siguiente receta: " + recetas[i].getNombre() + "con el ingrediente: " + ingrediente);
+                if (recetas[i].getIngrediente()[j].getNombre().equals(ingrediente)){
+                    System.out.println("Puedes usar la receta: " + recetas[i].getNombre() + " con el ingrediente: " + ingrediente);
+                }
              }
          }
     }

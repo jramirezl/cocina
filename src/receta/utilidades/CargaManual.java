@@ -140,7 +140,7 @@ public class CargaManual implements Cargador{
         costillasCerdo.setAutor("Flor");
         costillasCerdo.setInstrucciones("Bane las constillas de cerdo en barbecue and pongalas a las parilla al menos una hora");
 
-        Carne iCostillasCerdo1 = new Carne("Cerdo");
+        Carne iCostillasCerdo1 = new Carne("Pollo");
         iCostillasCerdo1.setParte("Costilla");
         iCostillasCerdo1.setCantidad(1);
         iCostillasCerdo1.setMedida("onzas"); 
