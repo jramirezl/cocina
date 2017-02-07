@@ -50,6 +50,7 @@ public class Chef {
     }
     
     public void buscarRecetasPorIngrediente(Receta[] recetas, String ingrediente){
+        int temp = 0;
          for (int i = 0; i < recetas.length; i++){
              boolean encontroIngrediente = false;
              for (int j = 0; j < recetas[i].getIngrediente().length && !encontroIngrediente; j++){ //Recorra mientras sea falso
@@ -59,8 +60,9 @@ public class Chef {
              }
              if (encontroIngrediente){
                 System.out.println("Puedes usar la receta: " + recetas[i].getNombre() + " con el ingrediente: " + ingrediente);
-             }else{
-                 System.out.println("Lo sentimos, la recetas con el ingrediente: " + ingrediente);
+                temp = 1;
+             }else if (temp == 0){
+                 System.out.println("Lo sentimos, no hay recetas que contengan el ingrediente:  " + ingrediente);
              }
          }
     }

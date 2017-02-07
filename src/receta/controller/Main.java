@@ -51,7 +51,7 @@ public class Main {
         System.out.println("El despues: cocina[0]" + misCocinas[0]);
         
         esaChef.valorReceta(misRecetas, "Empanada");
-        esaChef.buscarRecetasPorIngrediente(misRecetas, "pollo");
+        esaChef.buscarRecetasPorIngrediente(misRecetas, "Pollo");
         esaChef.numeroVerduras(misCocinas);
         esaChef.calcularReceta(misCocinas[0], misRecetas[1]);
 
