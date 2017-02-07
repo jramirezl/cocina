@@ -28,7 +28,6 @@ public class CargaManual implements Cargador{
     public Cocina[] cargarCocinas(){
         Cocina[] cocinas = new Cocina[2];
         Cocina hospital = new Cocina(5); 
-        Chef esaChef = new Chef();
         
         hospital.setNombreCocina("Childrens' Hospital");
         hospital.setUbicacionCocina("Cincinnati,OH");
@@ -37,7 +36,7 @@ public class CargaManual implements Cargador{
         Carne iHospital1 = new Carne("Pollo");
         iHospital1.setParte("pechuga");
         iHospital1.setCantidad(106);
-        iHospital1.setMedida("piezas");
+        iHospital1.setMedida("onzas");
 
         Condimento iHospital2 = new Condimento("Aji");
         iHospital2.setCantidad(200);
@@ -45,15 +44,15 @@ public class CargaManual implements Cargador{
 
         FrutayVerdura iHospital3 = new FrutayVerdura("papa");
         iHospital3.setCantidad(1);
-        iHospital3.setMedida("libra");
+        iHospital3.setMedida("onzas");
 
         Liquido iHospital4 = new Liquido("Aceite");
         iHospital4.setCantidad(100);
-        iHospital4.setMedida("galones");
+        iHospital4.setMedida("onzas");
 
         Grano iHospital5 = new Grano("Maiz");
         iHospital5.setCantidad(10);
-        iHospital5.setMedida("libras");
+        iHospital5.setMedida("onzas");
 
         hospital.agregarIngCocina(iHospital1);
         hospital.agregarIngCocina(iHospital2);
@@ -71,12 +70,12 @@ public class CargaManual implements Cargador{
         Carne iUniversidad1 = new Carne("Cerdo");
         iUniversidad1.setParte("Costilla");
         iUniversidad1.setCantidad(1500);
-        iUniversidad1.setMedida("libras"); 
+        iUniversidad1.setMedida("onzas"); 
 
 
         Liquido iUniversidad2 = new Liquido("Aceite");
         iUniversidad2.setCantidad(200);
-        iUniversidad2.setMedida("Galones"); 
+        iUniversidad2.setMedida("onzas"); 
 
         Condimento iUniversidad3 = new Condimento("barbecue");
         iUniversidad3.setCantidad(100);
@@ -88,7 +87,7 @@ public class CargaManual implements Cargador{
         universidad.agregarIngCocina(iUniversidad3);
 
         cocinas[1] = universidad;
-        System.out.println("Cocinas desde Carga Manual: "+ Arrays.toString(cocinas));
+        //System.out.println("Cocinas desde Carga Manual: "+ Arrays.toString(cocinas));
         return cocinas;
 
     }
@@ -96,6 +95,7 @@ public class CargaManual implements Cargador{
     
     public Receta[] cargarRecetas(){
         Receta[] recetas = new Receta[2];
+        Chef esaChef = new Chef();
         
         Receta empanada = new Receta(5);
         empanada.setNombre("Empanada");
@@ -105,24 +105,28 @@ public class CargaManual implements Cargador{
         Carne iEmpanada1 = new Carne("Pollo");
         iEmpanada1.setParte("pechuga");
         iEmpanada1.setCantidad(1);
-        iEmpanada1.setMedida("libra");
-        //iEmpanada1.usarIngrediente(empanada.getIngrediente());
+        iEmpanada1.setMedida("onzas");
+        iEmpanada1.setValor(2.50);
 
         Condimento iEmpanada2 = new Condimento("Aji");
         iEmpanada2.setCantidad(2);
         iEmpanada2.setMedida("onzas");
+        iEmpanada2.setValor(1.50);
 
         FrutayVerdura iEmpanada3 = new FrutayVerdura("papa");
         iEmpanada3.setCantidad(1);
-        iEmpanada3.setMedida("libra");    
+        iEmpanada3.setMedida("onzas");
+        iEmpanada3.setValor(1.00);
 
         Liquido iEmpanada4 = new Liquido("Aceite");
         iEmpanada4.setCantidad(16);
-        iEmpanada4.setMedida("onzas");     
+        iEmpanada4.setMedida("onzas");
+        iEmpanada4.setValor(4.00);
 
         Grano iEmpanada5 = new Grano("Maiz");
         iEmpanada5.setCantidad(1);
-        iEmpanada5.setMedida("libra");    
+        iEmpanada5.setMedida("onzas");  
+        iEmpanada5.setValor(1.00);
 
         empanada.agregarIngrediente(iEmpanada1);
         empanada.agregarIngrediente(iEmpanada2);
@@ -136,15 +140,17 @@ public class CargaManual implements Cargador{
         costillasCerdo.setAutor("Flor");
         costillasCerdo.setInstrucciones("Bane las constillas de cerdo en barbecue and pongalas a las parilla al menos una hora");
 
-        Carne iCostillasCerdo1 = new Carne("Cerdo");
+        Carne iCostillasCerdo1 = new Carne("Pollo");
         iCostillasCerdo1.setParte("Costilla");
         iCostillasCerdo1.setCantidad(1);
-        iCostillasCerdo1.setMedida("libra"); 
+        iCostillasCerdo1.setMedida("onzas"); 
+        iCostillasCerdo1.setValor(55.00);
 
 
         Condimento iCostillasCerdo2 = new Condimento("barbecue"); 
         iCostillasCerdo2.setCantidad(5);
         iCostillasCerdo2.setMedida("onzas"); 
+        iCostillasCerdo2.setValor(5.00);
 
         costillasCerdo.agregarIngrediente(iCostillasCerdo1);
         costillasCerdo.agregarIngrediente(iCostillasCerdo2);        
