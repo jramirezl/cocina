@@ -28,26 +28,23 @@ public class Chef {
         for (int i = 0; i < ingredientesReceta.length; i++){
             for (int j = 0; j < ingredientesCocina.length; j++){
                 if (ingredientesReceta[i].getNombre().equals(ingredientesCocina[j].getNombre()))
-                    System.out.println("i"+ingredientesReceta[i].getNombre());
-                    System.out.println("j"+ingredientesCocina[j].getNombre());
-                    ingredientesReceta[i].usarIngrediente(ingredientesCocina[j]);
+                {
+                    ingredientesCocina[j].usarIngrediente(ingredientesReceta[i]);
+                }
             }
         }
     }
     
     public double valorReceta(Receta[] recetas,String nombreReceta){
         double valor1 = 0;
-        double valor2 = 1;
         for (int i = 0; i < recetas.length; i++){
-            System.out.println("nombre " + recetas[i].getNombre());
             if(recetas[i].getNombre().equals(nombreReceta)){
                 for (int j = 0; j < recetas[i].getIngrediente().length;j++){
-                    valor1 += recetas[i].getIngrediente()[j].getValor()* recetas[i].getIngrediente()[j].getCantidad(); //No logro capturar la cantidad real, ideas?
-                    System.out.println("valorA2 "+valor1+" "+valor2 + " " + recetas[i].getIngrediente()[j].getNombre());
+                    valor1 += recetas[i].getIngrediente()[j].getValor()* recetas[i].getIngrediente()[j].getCantidad(); 
                 }
             }
         }
-        System.out.println("valor2 "+valor1);
+        System.out.println("El valor de la Receta es: $" + valor1);
         return valor1;
     }
 }
