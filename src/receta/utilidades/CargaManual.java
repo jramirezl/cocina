@@ -43,7 +43,7 @@ public class CargaManual implements Cargador{
         iHospital2.setMedida("onzas");
 
         FrutayVerdura iHospital3 = new FrutayVerdura("papa");
-        iHospital3.setCantidad(1);
+        iHospital3.setCantidad(13000);
         iHospital3.setMedida("onzas");
 
         Liquido iHospital4 = new Liquido("Aceite");
