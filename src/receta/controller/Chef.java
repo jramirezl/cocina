@@ -68,14 +68,14 @@ public class Chef {
     }
     
     public void numeroVerduras(Cocina[] cocinas){
-        int numeroDeVerduras = 0;
         for (int i = 0; i < cocinas.length; i++){
+            int numeroDeVerduras = 0;
             for (int j = 0; j < cocinas[i].getIngredienteCocina().length; j++){
                 if (cocinas[i].getIngredienteCocina()[j] instanceof FrutayVerdura)
                     numeroDeVerduras += cocinas[i].getIngrediente()[j].getCantidad();{
-                    System.out.println("la cocina " + cocinas[i].getNombreCocina() + " tiene " + numeroDeVerduras + " tipo frutas y verduras");
                 }
             }
+            System.out.println("la cocina " + cocinas[i].getNombreCocina() + " tiene " + numeroDeVerduras + " tipo frutas y verduras");
         }
     }
     
