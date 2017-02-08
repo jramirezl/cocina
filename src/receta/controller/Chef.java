@@ -81,18 +81,22 @@ public class Chef {
     
     
     public void calcularReceta(Cocina cocina, Receta receta){
-        int cantidadFaltante = 0;
-        for (int i = 0; i < cocina.getIngrediente().length; i++){
-            for (int j = 0; j < receta.getIngrediente().length; j++){
-                if (cocina.getIngrediente()[i].getNombre().equals(receta.getIngrediente()[j].getNombre())){
-                    if (cocina.getIngrediente()[i].getMedida().equals(receta.getIngrediente()[j].getMedida())){
-                        int cantidadCocina = cocina.getIngrediente()[i].getCantidad();
-                        int cantidadReceta = receta.getIngrediente()[j].getCantidad();
-                        if (cantidadCocina >= cantidadReceta){
-                            System.out.println("Hay Sueficiente Ingrediente" + receta.getIngrediente()[j].getNombre());
-                        }else
-                            cantidadFaltante = cantidadCocina - cantidadReceta; 
-                            System.out.println("Se debe conseguir " + cantidadFaltante + receta.getIngrediente()[j].getMedida() + " de " +  receta.getIngrediente()[j].getNombre());
+        for (int i = 0; i < receta.getIngrediente().length; i++){
+            int cantidadFaltante = 0;
+            boolean encontroIngrediente = false;
+            for (int j = 0; j < cocina.getIngredienteCocina().length && !encontroIngrediente; j++){
+                int cantidadCocina = cocina.getIngredienteCocina()[i].getCantidad();
+                int cantidadReceta = receta.getIngrediente()[j].getCantidad();
+                if (receta.getIngrediente()[i].getNombre().equals(receta.getIngrediente()[j].getNombre())){
+                    if (cocina.getIngredienteCocina()[i].getMedida().equals(receta.getIngrediente()[j].getMedida())){
+                    }
+                    if (cantidadCocina >= cantidadReceta){
+                            System.out.println("Hay Sueficiente Ingrediente " + receta.getIngrediente()[j].getNombre());
+                            encontroIngrediente = true;
+                        }
+                    else{
+                            cantidadFaltante = Math.abs(cantidadCocina - cantidadReceta); 
+                            System.out.println("Se debe conseguir " + cantidadFaltante + " " + receta.getIngrediente()[j].getMedida() + " de " +  receta.getIngrediente()[j].getNombre());
                     }
                 }
             }

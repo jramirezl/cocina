@@ -53,7 +53,7 @@ public class Main {
         esaChef.valorReceta(misRecetas, "Empanada");
         esaChef.buscarRecetasPorIngrediente(misRecetas, "Pollo");
         esaChef.numeroVerduras(misCocinas);
-        esaChef.calcularReceta(misCocinas[0], misRecetas[1]);
+        esaChef.calcularReceta(misCocinas[0], misRecetas[0]);
 
     }
         

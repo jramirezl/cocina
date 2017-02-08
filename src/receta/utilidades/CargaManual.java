@@ -104,7 +104,7 @@ public class CargaManual implements Cargador{
 
         Carne iEmpanada1 = new Carne("Pollo");
         iEmpanada1.setParte("pechuga");
-        iEmpanada1.setCantidad(1);
+        iEmpanada1.setCantidad(100000);
         iEmpanada1.setMedida("onzas");
         iEmpanada1.setValor(2.50);
 
