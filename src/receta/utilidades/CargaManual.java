@@ -43,15 +43,15 @@ public class CargaManual implements Cargador{
         iHospital2.setMedida("onzas");
 
         FrutayVerdura iHospital3 = new FrutayVerdura("papa");
-        iHospital3.setCantidad(1);
+        iHospital3.setCantidad(10);
         iHospital3.setMedida("onzas");
 
         Liquido iHospital4 = new Liquido("Aceite");
         iHospital4.setCantidad(100);
         iHospital4.setMedida("onzas");
 
-        Grano iHospital5 = new Grano("Maiz");
-        iHospital5.setCantidad(10);
+        FrutayVerdura iHospital5 = new FrutayVerdura("Maiz");
+        iHospital5.setCantidad(5);
         iHospital5.setMedida("onzas");
 
         hospital.agregarIngCocina(iHospital1);
@@ -104,7 +104,7 @@ public class CargaManual implements Cargador{
 
         Carne iEmpanada1 = new Carne("Pollo");
         iEmpanada1.setParte("pechuga");
-        iEmpanada1.setCantidad(1);
+        iEmpanada1.setCantidad(100000);
         iEmpanada1.setMedida("onzas");
         iEmpanada1.setValor(2.50);
 
