@@ -50,9 +50,8 @@ public class Chef {
     }
     
     public void buscarRecetasPorIngrediente(Receta[] recetas, String ingrediente){
-        int temp = 0;
+        boolean encontroIngrediente = false;
          for (int i = 0; i < recetas.length; i++){
-             boolean encontroIngrediente = false;
              for (int j = 0; j < recetas[i].getIngrediente().length && !encontroIngrediente; j++){ //Recorra mientras sea falso
                 if (recetas[i].getIngrediente()[j].getNombre().equals(ingrediente)){
                     encontroIngrediente = true;
@@ -60,8 +59,7 @@ public class Chef {
              }
              if (encontroIngrediente){
                 System.out.println("Puedes usar la receta: " + recetas[i].getNombre() + " con el ingrediente: " + ingrediente);
-                temp = 1;
-             }else if (temp == 0){
+             }else{
                  System.out.println("Lo sentimos, no hay recetas que contengan el ingrediente:  " + ingrediente);
              }
          }
@@ -81,15 +79,14 @@ public class Chef {
     
     
     public void calcularReceta(Cocina cocina, Receta receta){
-        for (int i = 0; i < receta.getIngrediente().length; i++){
+        for (int i = 0; i < cocina.getIngredienteCocina().length; i++){
             int cantidadFaltante = 0;
             boolean encontroIngrediente = false;
-            for (int j = 0; j < cocina.getIngredienteCocina().length && !encontroIngrediente; j++){
+            for (int j = 0; j < receta.getIngrediente().length && !encontroIngrediente; j++){
                 int cantidadCocina = cocina.getIngredienteCocina()[i].getCantidad();
                 int cantidadReceta = receta.getIngrediente()[j].getCantidad();
                 if (receta.getIngrediente()[i].getNombre().equals(receta.getIngrediente()[j].getNombre())){
-                    if (cocina.getIngredienteCocina()[i].getMedida().equals(receta.getIngrediente()[j].getMedida())){
-                    }
+                    if (cocina.getIngredienteCocina()[i].getMedida().equals(receta.getIngrediente()[j].getMedida())){                   
                     if (cantidadCocina >= cantidadReceta){
                             System.out.println("Hay Sueficiente Ingrediente " + receta.getIngrediente()[j].getNombre());
                             encontroIngrediente = true;
@@ -97,6 +94,7 @@ public class Chef {
                     else{
                             cantidadFaltante = Math.abs(cantidadCocina - cantidadReceta); 
                             System.out.println("Se debe conseguir " + cantidadFaltante + " " + receta.getIngrediente()[j].getMedida() + " de " +  receta.getIngrediente()[j].getNombre());
+                        }   
                     }
                 }
             }
