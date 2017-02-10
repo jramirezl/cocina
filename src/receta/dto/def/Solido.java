@@ -37,7 +37,8 @@ public class Solido extends Ingrediente{
             }else{
                 System.out.println("se debe hacer una conversion-Solido");
             }
-            System.out.println("No hay inventario suficiente - Solido");  
+        }else{
+            System.out.println("No hay inventario suficiente - Solido");
         }
     }
     
