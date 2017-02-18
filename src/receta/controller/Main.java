@@ -44,14 +44,16 @@ public class Main {
                 //System.out.print("Mis Recetas en la posicion i" + misRecetas[i]);
             }
 
-        System.out.println("El antes: cocina[0]" + misCocinas[0]);
-        System.out.println("El antes: Receta[0]" + misRecetas[0]);
+        //System.out.println("El antes: cocina[0]" + misCocinas[0]);
+        //System.out.println("El antes: Receta[0]" + misRecetas[0]);
 
-        esaChef.cocinarReceta(misCocinas[0], misRecetas[0]);
-        System.out.println("El despues: cocina[0]" + misCocinas[0]);
+        //esaChef.cocinarReceta(misCocinas[0], misRecetas[0]);
+        //System.out.println("El despues: cocina[0]" + misCocinas[0]);
         
-        esaChef.valorReceta(misRecetas, "Empanada");
-        esaChef.CalcularValorReceta(misRecetas, "Pollo");
+        //esaChef.valorReceta(misRecetas, "Empanada");
+        //esaChef.buscarRecetasPorIngrediente(misRecetas, "Pollo");
+        //esaChef.numeroVerduras(misCocinas);
+        esaChef.calcularReceta(misCocinas[0], misRecetas[1]);
 
     }
         

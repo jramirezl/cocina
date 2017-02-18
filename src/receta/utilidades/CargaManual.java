@@ -35,7 +35,7 @@ public class CargaManual implements Cargador{
 
         Carne iHospital1 = new Carne("Pollo");
         iHospital1.setParte("pechuga");
-        iHospital1.setCantidad(106);
+        iHospital1.setCantidad(100);
         iHospital1.setMedida("onzas");
 
         Condimento iHospital2 = new Condimento("Aji");
@@ -43,7 +43,7 @@ public class CargaManual implements Cargador{
         iHospital2.setMedida("onzas");
 
         FrutayVerdura iHospital3 = new FrutayVerdura("papa");
-        iHospital3.setCantidad(1);
+        iHospital3.setCantidad(10);
         iHospital3.setMedida("onzas");
 
         Liquido iHospital4 = new Liquido("Aceite");
@@ -51,7 +51,7 @@ public class CargaManual implements Cargador{
         iHospital4.setMedida("onzas");
 
         Grano iHospital5 = new Grano("Maiz");
-        iHospital5.setCantidad(10);
+        iHospital5.setCantidad(5);
         iHospital5.setMedida("onzas");
 
         hospital.agregarIngCocina(iHospital1);
@@ -106,7 +106,7 @@ public class CargaManual implements Cargador{
         iEmpanada1.setParte("pechuga");
         iEmpanada1.setCantidad(1);
         iEmpanada1.setMedida("onzas");
-        iEmpanada1.setValor(2.50);
+        iEmpanada1.setValor(10);
 
         Condimento iEmpanada2 = new Condimento("Aji");
         iEmpanada2.setCantidad(2);
@@ -140,7 +140,7 @@ public class CargaManual implements Cargador{
         costillasCerdo.setAutor("Flor");
         costillasCerdo.setInstrucciones("Bane las constillas de cerdo en barbecue and pongalas a las parilla al menos una hora");
 
-        Carne iCostillasCerdo1 = new Carne("Pollo");
+        Carne iCostillasCerdo1 = new Carne("pollo");
         iCostillasCerdo1.setParte("Costilla");
         iCostillasCerdo1.setCantidad(1);
         iCostillasCerdo1.setMedida("onzas"); 
