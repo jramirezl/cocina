@@ -7,6 +7,34 @@ nbdist/
 nbactions.xml
 nb-configuration.xml
 
+# Intellij Specific #
+# User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+# Sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
+*.iml
+*.ipr
+*.iws
+*.DS_Store
+.DS_Store
+.idea
+.idea/**
+.idea/**/*
+
 # Class Files #
 *.class
 
