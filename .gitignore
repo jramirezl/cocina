@@ -15,5 +15,21 @@ nb-configuration.xml
 *.war
 *.ear
 
+# Package Files #
+*.war
+*.ear
 
+*.iml
+*.ipr
+*.iws
+*.DS_Store
+.DS_Store
+.idea
+.idea/**
+.idea/**/*
+.gradle
+target/**
+target/**/*
+build/**
+build/**/*
 
